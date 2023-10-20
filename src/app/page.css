@@ -10,13 +10,13 @@
 .login_introduction {
     margin: 70px;
     width: 45%;
-    background-color: var(--first_color);
+    background-color: var(--navy_color);
     border-radius: 30px;
 }
 
 .login_introduction img {
     display: block;
-    margin: 17% auto 7%;
+    margin: 18% auto 6%;
     width: 55%;
     border-radius: 8px;
 }
@@ -30,7 +30,7 @@
 }
 
 .login_introduction p {
-    margin-top: 3%;
+    margin-top: 2.5%;
     font-size: 1.3rem;
 }
 
