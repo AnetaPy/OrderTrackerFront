@@ -1,5 +1,5 @@
 import './page.css';
-const Home = () => {
+const Login = () => {
     return (
         <div className="main">
             <h1>Hi</h1>
@@ -8,4 +8,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Login;
