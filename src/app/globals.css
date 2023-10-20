@@ -1,6 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Calibri;
+  font-family: Calibri, sans-serif;
+  color: var(--font_color);
+}
 
+:root {
+  --background_color: #161616;
+  --first_color: #282828;
+  --second_color: #424242;
+  --font_color: #ffffff;
+  --line_color: #3a3a3a;
+  --status_font_color: #707070;
+  --input_color: #181818;
+  --input_font_color: #bdbdbd;
 }
