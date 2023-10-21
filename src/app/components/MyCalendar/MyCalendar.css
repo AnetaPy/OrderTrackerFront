@@ -1,17 +1,12 @@
-
-/*Kalendarz*/
 .Home_container .Home_wrapper .Home_calendar {
     padding: 0 40px;
-    /*background-color: var(--first_color);*/
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar {
     padding: 10px;
-    border: none !important;
+    border: none;
     border-radius: 20px;
     background-color: var(--first_color);
-
-
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar .react-calendar__tile {
