@@ -1,0 +1,17 @@
+.Login_container .Login_divider {
+    display: flex;
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login_container .Login_divider .Login_line {
+    margin: 0 30px;
+    height: 2px;
+    width: 25%;
+    background-color: var(--line_color);
+}
+
+.Login_container .Login_divider p {
+    font-size: 1.2rem;
+}

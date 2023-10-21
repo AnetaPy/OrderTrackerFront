@@ -1,5 +1,4 @@
-
-.login {
+.Login {
     display: flex;
     height: 100vh;
     justify-content: space-between;
@@ -7,157 +6,17 @@
 
 }
 
-.login_introduction {
-    margin: 70px;
-    width: 45%;
-    background-color: var(--navy_color);
-    border-radius: 30px;
-}
-
-.login_introduction img {
-    display: block;
-    margin: 18% auto 6%;
-    width: 55%;
-    border-radius: 8px;
-}
-
-.login_introduction h1, .login_introduction p {
-    text-align: center;
-}
-
-.login_introduction h1 {
-    font-size: 2.5rem;
-}
-
-.login_introduction p {
-    margin-top: 2.5%;
-    font-size: 1.3rem;
-}
-
-/*Logowanie*/
-.login_container {
+.Login_container {
     width: 55%;
 }
 
-.login_container img {
+.Login_container img {
     margin: 40px 10px 0 85%;
     width: 10%;
 }
 
-.login_container h2 {
+.Login_container h2 {
     margin-left: 20%;
     font-size: 2.4rem;
-}
-
-/*Login with google and github*/
-.login_container .login_portals {
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.login_container .login_portals button {
-    display: block;
-    margin: 6px 0;
-    padding: 10px 30px;
-    width: 60%;
-    background-color: var(--second_color);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-
-}
-
-.login_container .login_portals button .login_button {
-    display: flex;
-    justify-content: center;
-}
-
-.login_container .login_portals button .login_button img {
-    margin: 0;
-    padding-right: 20px;
-    width: 6%;
-    height: 6%;
-}
-
-.login_container .login_portals button .login_button p {
-    line-height: 25px;
-    font-size: 1.2rem;
-}
-
-/*Divider*/
-.login_container .login_divider {
-    display: flex;
-    margin: 25px 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.login_container .login_divider .login_line {
-    margin: 0 30px;
-    height: 2px;
-    width: 25%;
-    background-color: var(--line_color);
-}
-
-.login_container .login_divider p {
-    font-size: 1.2rem;
-}
-
-/*Form*/
-.login_container .login_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.login_container .login_form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 58%;
-}
-
-.login_container .login_form form label {
-    width: 100%;
-    font-size: 1.4rem;
-}
-
-.login_container .login_form form label input {
-    display: block;
-    margin: 10px 0 15px -10px;
-    padding: 12px 12px 12px 30px;
-    width: 95%;
-    font-size: 1.3rem;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--second_color);
-    color: var(--input_font_color);
-}
-
-.login_container .login_form form button {
-    margin-top: 10px;
-    padding: 12px;
-    width: 103%;
-    background-color: var(--first_color);
-    border: none;
-    border-radius: 20px;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-.login_container .login_form a {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-.login_container .login_form p {
-    cursor: pointer;
-}
-
-.login_container .login_form p span {
-    font-weight: bold;
 }
 
