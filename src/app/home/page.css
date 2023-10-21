@@ -1,0 +1,30 @@
+.Home {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Home_navigation {
+    width: 20%;
+    background-color: var(--navy_color);
+}
+
+.Home_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.Home_container .Home_header {
+    padding: 40px 40px 40px 8%;
+}
+
+.Home_container .Home_header h1 {
+    margin-right: 10%;
+    display: inline;
+}
+
+.Home_container .Home_header h2 {
+    display: inline;
+}
