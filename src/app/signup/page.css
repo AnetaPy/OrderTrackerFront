@@ -1,0 +1,21 @@
+.Signup {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Signup_container {
+    width: 55%;
+}
+
+.Signup_container img {
+    margin: 40px 10px 0 85%;
+    width: 10%;
+}
+
+.Signup_container h2 {
+    margin-top: 50px;
+    margin-left: 20%;
+    font-size: 2.4rem;
+}

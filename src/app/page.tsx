@@ -1,8 +1,8 @@
 import './page.css'
-import {LoginIntroduction} from "@/app/components/common/LoginIntroduction";
-import {LoginPortals} from "@/app/components/login/LoginPortals/LoginPortals";
-import {LoginDivider} from "@/app/components/login/LoginDivider/LoginDivider";
-import {LoginForm} from "@/app/components/login/LoginForm/LoginForm";
+import {LoginIntroduction} from "@/components/common/LoginIntroduction";
+import {LoginPortals} from "@/components/login/LoginPortals/LoginPortals";
+import {LoginDivider} from "@/components/login/LoginDivider/LoginDivider";
+import {LoginForm} from "@/components/login/LoginForm/LoginForm";
 
 const Login = () => {
     return (
