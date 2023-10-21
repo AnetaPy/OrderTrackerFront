@@ -1,5 +1,5 @@
 import './page.css'
-import {LoginIntroduction} from "@/app/components/login/LoginIntroduction/LoginIntroduction";
+import {LoginIntroduction} from "@/app/components/common/LoginIntroduction";
 import {LoginPortals} from "@/app/components/login/LoginPortals/LoginPortals";
 import {LoginDivider} from "@/app/components/login/LoginDivider/LoginDivider";
 import {LoginForm} from "@/app/components/login/LoginForm/LoginForm";
