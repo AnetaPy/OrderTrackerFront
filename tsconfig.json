@@ -26,7 +26,7 @@
       "types": [
         "../order-tracker-back/types"
       ],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/app/*"]
     },
     "forceConsistentCasingInFileNames": true
   },
