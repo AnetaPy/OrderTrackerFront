@@ -1,9 +1,10 @@
 .Home_container .Home_wrapper .Home_calendar {
-    padding: 0 40px;
+    /*padding: 0 40px;*/
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar {
-    padding: 10px;
+    padding: 10px 8px 0;
+    height: 100%;
     border: none;
     border-radius: 20px;
     background-color: var(--first_color);
@@ -39,3 +40,10 @@
     border-radius: 10px;
 }
 
+.Home_container .Home_wrapper .Home_calendar .react-calendar .react-calendar__tile {
+    padding: 8px 5px;
+}
+
+.Home_container .Home_wrapper .Home_calendar .react-calendar .react-calendar__navigation {
+    margin-bottom: 0.4rem;
+}
