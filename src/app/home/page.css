@@ -7,8 +7,8 @@
 
 /*Nawigacja*/
 .Home_navigation {
-    padding: 60px 20px;
-    width: 15vw;
+    padding: 60px 23px;
+    width: 11vw;
     background-color: var(--navy_color);
 }
 
@@ -75,7 +75,7 @@
 .Home_container {
     display: flex;
     flex-direction: column;
-    width: 85vw;
+    width: 89vw;
 }
 
 .Home_container .Home_header {
@@ -100,48 +100,51 @@
 /*Kalendarz*/
 .Home_container .Home_wrapper .Home_calendar {
     padding: 20px 10px 20px 50px;
-    width: 25%;
+    width: 24vw;
+
+    /*width: 25%;*/
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar {
     background-color: #282828;
-    height: 34vh;
+    height: 32vh;
+    width: 100%;
 }
 
 /*Zamówienie w trakcie*/
 .Home_container .Home_wrapper .Home_actual_order {
-    padding: 20px 40px 20px 20px;
-    width: 75%;
+    padding: 20px 40px 20px 10px;
+    width: 63vw;
 }
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container {
     background-color: #282828;
-    height: 34vh;
+    height: 32vh;
     border-radius: 20px;
 }
 
 /*Dodaj materiał*/
 .Home_container .Home_wrapper .Home_add_material {
     padding: 20px 10px 20px 50px;
-    width: 25%;
+    width: 24vw;
 }
 
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container {
     background-color: #282828;
-    height: 40vh;
+    height: 45vh;
     border-radius: 20px;
 
 }
 
 /*Dodaj zamówienie*/
 .Home_container .Home_wrapper .Home_add_order {
-    padding: 20px 40px 20px 20px;
-    width: 75%;
+    padding: 20px 40px 20px 10px;
+    width: 63vw;
 }
 
 .Home_container .Home_wrapper .Home_add_order .Home_add_order_container {
     background-color: #282828;
-    height: 40vh;
+    height: 45vh;
     border-radius: 20px;
 
 }
