@@ -6,7 +6,6 @@ import './MyCalendar.css';
 export const MyCalendar = () => {
     const [currentDate, setCurrentDate] = useState(new Date())
     const date = new Date();
-    console.log(date.toLocaleString())
     function getDate(date: Date | string) {
         setCurrentDate(new Date(date))
     }
