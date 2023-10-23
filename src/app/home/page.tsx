@@ -1,6 +1,7 @@
 import './page.css';
 import 'react-calendar/dist/Calendar.css';
 import {MyCalendar} from "@/components/MyCalendar/MyCalendar";
+import React from "react";
 
 
 const Home = () => {
@@ -46,6 +47,7 @@ const Home = () => {
                         <div className="Home_actual_order_container">
                             <h2>Zam 1</h2>
                             <p>W trakcie</p>
+                            <p className="Home_notification_orange">Pozostało Ci 8 dni do końca terminu</p>
                             <div className="Home_actual_order_container_items">
                                 <div className="Home_deadline">
                                     <h3>Deadline</h3>
@@ -57,70 +59,69 @@ const Home = () => {
                                 <div className="Home_elements">
                                     <h3>Elementy</h3>
                                     <div className="Home_elements_container">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Lp</th>
+                                                <th>Nazwa</th>
+                                                <th>Ilość</th>
+                                            </tr>
+                                            </thead>
 
-                                            <table>
-                                                <thead>
-                                                <tr>
-                                                    <th>Lp</th>
-                                                    <th>Nazwa</th>
-                                                    <th>Ilość</th>
-                                                </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Koła</td>
-                                                    <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Owale</td>
-                                                    <td>30</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Przebiśniegi</td>
-                                                    <td>13</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Koła</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Owale</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Przebiśniegi</td>
+                                                <td>13</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
                                 </div>
                                 <div className="Home_materials_used">
@@ -151,6 +152,21 @@ const Home = () => {
                                                 <td>Płyn</td>
                                                 <td>30</td>
                                             </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Freaz</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Recznik</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Płyn</td>
+                                                <td>30</td>
+                                            </tr>
 
                                             </tbody>
 
@@ -162,7 +178,47 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="Home_add_material">
-                        <div className="Home_add_material_container">Home_add_material</div>
+                        <div className="Home_add_material_container">
+                            <h2>Dodaj nowy materiał</h2>
+                            {/*<a href="/materials">zobacz stan mazynowy <img src="/icons/arrow_right.png" alt=""/></a>*/}
+                            <form>
+                                <label>
+                                    Nazwa
+                                    <input
+                                        type="text"
+                                        name="name-material"
+                                        // value={email}
+                                        // onChange={(e) => setEmail(e.target.value)}
+                                        className="Home_name_material"
+                                        placeholder="Nazwa materiału"
+                                    />
+                                </label>
+                                <label>
+                                    Ilość
+                                    <input
+                                        type="number"
+                                        name="amount-material"
+                                        // value={email}
+                                        // onChange={(e) => setEmail(e.target.value)}
+                                        className="Home_amount_material"
+                                        placeholder="0"
+                                    />
+                                </label>
+                                <label>
+                                    Komentarz
+                                    <textarea
+                                        name="comment"
+                                        cols="30"
+                                        rows="4"
+                                        // value={email}
+                                        // onChange={(e) => setEmail(e.target.value)}
+                                        className="Home_comment"
+                                        placeholder="Twój komentarz">
+                                    </textarea>
+                                    <button>Zapisz</button>
+                                </label>
+                            </form>
+                        </div>
                     </div>
                     <div className="Home_add_order">
                         <div className="Home_add_order_container">Home_add_order</div>

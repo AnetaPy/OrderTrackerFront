@@ -56,7 +56,7 @@
 
 .Home_navigation nav ul li a img {
     padding-right: 20px;
-   height: 28px;
+    height: 28px;
 }
 
 .Home_navigation nav ul li a p {
@@ -128,7 +128,22 @@
 }
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container p {
+    padding-right: 40px;
     display: inline;
+    font-size: 1.1rem;
+}
+
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container p:nth-child(3) {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container p.Home_notification_red {
+    color: red;
+}
+
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container p.Home_notification_orange {
+    color: orange;
 }
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items {
@@ -137,72 +152,60 @@
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline,
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used,
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements{
-  width: 30%;
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements {
+    width: 30%;
 }
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container,
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container,
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container{
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container {
     margin-top: 15px;
     padding: 10px 15px;
     background-color: var(--background_color);
     border-radius: 20px;
     height: 18vh;
-
 }
 
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container h4{
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container h4 {
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container p{
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container p {
     font-size: 1.1rem;
 }
 
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container {
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container,
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container {
     overflow: auto;
 }
 
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container{
-    overflow: auto;
-
-}
-
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table tr th:nth-child(2){
-    border: 1px solid white;
-    border-collapse: collapse;
-}
-
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table tr td{
-    /*padding: 2px;*/
-}
-
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar{
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar,
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container::-webkit-scrollbar {
     width: 10px;
     background: #fff;
     border-radius: 10px;
-
 }
 
-.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar-thumb {
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar-thumb,
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container::-webkit-scrollbar-thumb {
     background: var(--input_font_color);
     border-radius: 10px;
 }
 
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table thead tr th,
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container table thead tr th {
+    text-align: left;
+}
 
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table,
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container table {
+    width: 80%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table thead tr th:nth-child(2) {
+    width: 50%;
+}
 
 
 /*Dodaj materiał*/
@@ -212,10 +215,68 @@
 }
 
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container {
+    padding: 25px 30px;
     background-color: #282828;
-    height: 45vh;
+    height: 47vh;
     border-radius: 20px;
 }
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container h2 {
+    display: inline;
+}
+
+/*.Home_container .Home_wrapper .Home_add_material .Home_add_material_container a {*/
+/*    text-decoration: none;*/
+/*    display: inline;*/
+/*}*/
+
+/*.Home_container .Home_wrapper .Home_add_material .Home_add_material_container a img {*/
+/*    margin-left: 5px;*/
+/*    width: 10px;*/
+/*}*/
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form label{
+    font-size: 1.2rem;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form input,
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
+    margin: 7px 0 15px;
+    display: block;
+    padding: 5px 15px;
+    width: 95%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--second_color);
+    color: var(--input_font_color);
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
+    padding: 10px 15px;
+
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form label:nth-child(2) input {
+    width: 40%;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form button {
+    padding: 10px 30px;
+    background-color: var(--background_color);
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
 
 /*Dodaj zamówienie*/
 .Home_container .Home_wrapper .Home_add_order {
@@ -225,7 +286,7 @@
 
 .Home_container .Home_wrapper .Home_add_order .Home_add_order_container {
     background-color: #282828;
-    height: 45vh;
+    height: 47vh;
     border-radius: 20px;
 }
 
