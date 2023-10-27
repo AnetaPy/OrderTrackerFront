@@ -1,4 +1,5 @@
 import React from "react";
+import './HomeActualOrderElements.css';
 
 export const HomeActualOrderElements = () => {
     return (

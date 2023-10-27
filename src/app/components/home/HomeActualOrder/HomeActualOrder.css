@@ -44,15 +44,11 @@
     height: 100%;
 }
 
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements {
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline{
     width: 30%;
 }
 
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container {
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container{
     margin-top: 15px;
     padding: 10px 15px;
     background-color: var(--background_color);
@@ -69,36 +65,5 @@
     font-size: 1.1rem;
 }
 
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container {
-    overflow: auto;
-}
-
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container::-webkit-scrollbar {
-    width: 10px;
-    background: #fff;
-    border-radius: 10px;
-}
-
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container::-webkit-scrollbar-thumb,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container::-webkit-scrollbar-thumb {
-    background: var(--input_font_color);
-    border-radius: 10px;
-}
-
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table thead tr th,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container table thead tr th {
-    text-align: left;
-}
-
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table,
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_materials_used_container table {
-    width: 80%;
-}
-
-.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_elements_container table thead tr th:nth-child(2) {
-    width: 50%;
-}
 
 

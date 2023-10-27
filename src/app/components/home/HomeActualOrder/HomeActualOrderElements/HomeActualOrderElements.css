@@ -1,0 +1,40 @@
+.Home_elements {
+    width: 30%;
+}
+
+.Home_elements_container {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: var(--background_color);
+    border-radius: 20px;
+    height: 18vh;
+}
+
+.Home_elements_container {
+    overflow: auto;
+}
+
+.Home_elements_container::-webkit-scrollbar{
+    width: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.Home_elements_container::-webkit-scrollbar-thumb {
+    background: var(--input_font_color);
+    border-radius: 10px;
+}
+
+.Home_elements_container table thead tr th {
+    text-align: left;
+}
+
+.Home_elements_container table {
+    width: 80%;
+}
+
+.Home_elements_container table thead tr th:nth-child(2) {
+    width: 50%;
+}
+
+
