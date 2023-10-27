@@ -1,0 +1,56 @@
+.Home_navigation {
+    padding: 60px 23px;
+    width: 11vw;
+    background-color: var(--navy_color);
+}
+
+.Home_navigation .Home_user_details {
+    padding-right: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Home_navigation .Home_user_details img {
+    height: 42px;
+}
+
+.Home_navigation .Home_user_details .Home_user_information h3 {
+    padding-bottom: 3px;
+    font-size: 1.1rem;
+}
+
+.Home_navigation .Home_user_details .Home_user_information p {
+    font-size: 0.8rem;
+}
+
+.Home_navigation nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 77vh;
+    list-style: none;
+}
+
+.Home_navigation nav ul .Home_line {
+    margin-bottom: 15px;
+    height: 1px;
+    background-color: var(--line_color);
+}
+
+.Home_navigation nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    text-decoration: none;
+}
+
+.Home_navigation nav ul li a img {
+    padding-right: 20px;
+    height: 28px;
+}
+
+.Home_navigation nav ul li a p {
+    font-size: 1rem;
+}

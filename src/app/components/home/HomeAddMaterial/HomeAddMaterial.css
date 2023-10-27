@@ -1,0 +1,47 @@
+.Home_container .Home_wrapper .Home_add_material {
+    padding: 20px 10px 20px 50px;
+    width: 24vw;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container {
+    padding: 25px 30px;
+    background-color: var(--first_color);
+    height: 47vh;
+    border-radius: 20px;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container h2 {
+    display: inline;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form input,
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
+    margin: 7px 0 15px;
+    display: block;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--second_color);
+    color: var(--input_font_color);
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form input::placeholder,
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea::placeholder {
+    color: var(--input_font_color);
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form label:nth-child(2) input {
+    width: 40%;
+}

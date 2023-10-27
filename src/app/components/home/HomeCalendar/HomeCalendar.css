@@ -1,5 +1,12 @@
 .Home_container .Home_wrapper .Home_calendar {
-    /*padding: 0 40px;*/
+    padding: 20px 10px 20px 50px;
+    width: 24vw;
+}
+
+.Home_container .Home_wrapper .Home_calendar .react-calendar {
+    background-color: var(--first_color);
+    min-height: 32vh;
+    width: 100%;
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar {
