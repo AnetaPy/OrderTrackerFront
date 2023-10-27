@@ -1,11 +1,11 @@
 import React from "react";
-import './HomeAddMaterial.css';
+import './AddMaterial.css';
 import {Btn} from "@/components/common/Btn";
 
-export const HomeAddMaterial = () => {
+export const AddMaterial = () => {
     return (
-        <div className="Home_add_material">
-            <div className="Home_add_material_container">
+        <div className="Add_material">
+            <div className="Add_material_container">
                 <h2>Dodaj nowy materiał</h2>
                 {/*<a href="/materials">zobacz stan mazynowy <img src="/icons/arrow_right.png" alt=""/></a>*/}
                 <form>
@@ -16,7 +16,7 @@ export const HomeAddMaterial = () => {
                             name="name-material"
                             // value={email}
                             // onChange={(e) => setEmail(e.target.value)}
-                            className="Home_name_material"
+                            className="Name_material"
                             placeholder="Nazwa materiału"
                         />
                     </label>
@@ -27,7 +27,7 @@ export const HomeAddMaterial = () => {
                             name="amount-material"
                             // value={email}
                             // onChange={(e) => setEmail(e.target.value)}
-                            className="Home_amount_material"
+                            className="Amount_material"
                             placeholder="0"
                         />
                     </label>
@@ -39,7 +39,7 @@ export const HomeAddMaterial = () => {
                             rows="4"
                             // value={email}
                             // onChange={(e) => setEmail(e.target.value)}
-                            className="Home_comment"
+                            className="Comment"
                             placeholder="Twój komentarz">
                                     </textarea>
                     </label>

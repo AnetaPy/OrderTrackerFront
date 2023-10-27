@@ -1,12 +1,12 @@
 import React from "react";
-import './HomeNavigation.css';
+import './Navigation.css';
 
-export const HomeNavigation = () => {
+export const Navigation = () => {
     return (
-        <div className="Home_navigation">
-            <div className="Home_user_details">
+        <div className="Navigation">
+            <div className="Navigation_user_details">
                 <img src="/icons/user.png" alt="User image"/>
-                <div className="Home_user_information">
+                <div className="Navigation_user_information">
                     <h3>Aneta</h3>
                     <p>aneta@gmail.com</p></div>
             </div>

@@ -1,18 +1,18 @@
 import React from "react";
-import './HomeAddOrder.css';
+import './AddOrder.css';
 import {Btn} from "@/components/common/Btn";
 import {Divider} from "@/components/common/Divider";
 
-export const HomeAddOrder = () => {
+export const AddOrder = () => {
     return (
-        <div className="Home_add_order">
-            <div className="Home_add_order_container">
-                <div className="Home_add_order_header">
+        <div className="Add_order">
+            <div className="Add_order_container">
+                <div className="Add_order_header">
                     <h2>Dodaj nowe zamówienie</h2>
                     <a href="/materials">zobacz wszystkie <img src="/icons/arrow_right.png" alt=""/></a>
                 </div>
                 <form>
-                    <div className="Home_add_order_left_side">
+                    <div className="Add_order_left_side">
                         <label>
                             Nazwa
                             <input
@@ -20,7 +20,7 @@ export const HomeAddOrder = () => {
                                 name="name-order"
                                 // value={email}
                                 // onChange={(e) => setEmail(e.target.value)}
-                                className="Home_name_order"
+                                className="Name_order"
                                 placeholder="Nazwa zamówienia"
                             />
                         </label>
@@ -39,7 +39,7 @@ export const HomeAddOrder = () => {
                         </label>
                         <label>
                             Materiały
-                            <div className="Home_order_add_material">
+                            <div className="Order_add_material">
                                 <select defaultValue={"DEFAULT"} name="name-material-order">
                                     <option value="DEFAULT" disabled>Wybierz</option>
                                     <option value="">Frez</option>
@@ -51,11 +51,11 @@ export const HomeAddOrder = () => {
                                     name="amount-material-order"
                                     // value={email}
                                     // onChange={(e) => setEmail(e.target.value)}
-                                    className="Home_amount_material_order"
+                                    className="Amount_material_order"
                                     placeholder="0"
                                 />
                             </div>
-                            <div className="Home_order_add_material">
+                            <div className="Order_add_material">
                                 <select name="name-material-order">
                                     <option>Wybierz</option>
                                     <option value="">Frez</option>
@@ -67,11 +67,11 @@ export const HomeAddOrder = () => {
                                     name="amount-material-order"
                                     // value={email}
                                     // onChange={(e) => setEmail(e.target.value)}
-                                    className="Home_amount_material_order"
+                                    className="Amount_material_order"
                                     placeholder="0"
                                 />
                             </div>
-                            <div className="Home_order_add_material">
+                            <div className="Order_add_material">
                                 <select name="name-material-order">
                                     <option>Wybierz</option>
                                     <option value="">Frez</option>
@@ -83,13 +83,13 @@ export const HomeAddOrder = () => {
                                     name="amount-material-order"
                                     // value={email}
                                     // onChange={(e) => setEmail(e.target.value)}
-                                    className="Home_amount_material_order"
+                                    className="Amount_material_order"
                                     placeholder="0"
                                 />
                             </div>
                         </label>
                     </div>
-                    <div className="Home_add_order_right_side">
+                    <div className="Add_order_right_side">
                         <label>
                             Wczytaj dane
                             <Btn src="/images/icon-excel.png" alt="Excel icon" text="Plik .xlsx"/>
@@ -103,7 +103,7 @@ export const HomeAddOrder = () => {
                                 name="name-element"
                                 // value={email}
                                 // onChange={(e) => setEmail(e.target.value)}
-                                className="Home_name_element"
+                                className="Name_element"
                                 placeholder="Nazwa"
                             />
                             <input
@@ -111,7 +111,7 @@ export const HomeAddOrder = () => {
                                 name="amount-element"
                                 // value={email}
                                 // onChange={(e) => setEmail(e.target.value)}
-                                className="Home_amount_element"
+                                className="Amount_element"
                                 placeholder="0"
                             />
                         </label>
@@ -123,7 +123,7 @@ export const HomeAddOrder = () => {
                                 rows="2"
                                 // value={email}
                                 // onChange={(e) => setEmail(e.target.value)}
-                                className="Home_comment"
+                                className="Comment"
                                 placeholder="Twój komentarz">
                                     </textarea>
                         </label>

@@ -1,17 +1,17 @@
 import React from "react";
 import './page.css';
 import 'react-calendar/dist/Calendar.css';
-import {HomeNavigation} from "@/components/home/HomeNavigation/HomeNavigation";
+import {Navigation} from "@/components/common/Navigation";
 import {HomeCalendar} from "@/components/home/HomeCalendar/HomeCalendar";
 import {HomeActualOrder} from "@/components/home/HomeActualOrder/HomeActualOrder";
-import {HomeAddMaterial} from "@/components/home/HomeAddMaterial/HomeAddMaterial";
-import {HomeAddOrder} from "@/components/home/HomeAddOrder/HomeAddOrder";
+import {AddMaterial} from "@/components/common/Add/AddMaterial/AddMaterial";
+import {AddOrder} from "@/components/common/Add/AddOrder/AddOrder";
 
 const Home = () => {
 
     return (
         <div className="Home">
-            <HomeNavigation/>
+            <Navigation/>
             <div className="Home_container">
                 <div className="Home_header">
                     <h1>Witaj Aneta!</h1>
@@ -20,8 +20,8 @@ const Home = () => {
                 <div className="Home_wrapper">
                     <HomeCalendar/>
                     <HomeActualOrder/>
-                    <HomeAddMaterial/>
-                    <HomeAddOrder/>
+                    <AddMaterial/>
+                    <AddOrder/>
                 </div>
             </div>
         </div>
