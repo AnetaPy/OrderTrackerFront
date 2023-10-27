@@ -6,6 +6,7 @@ import {HomeCalendar} from "@/components/home/HomeCalendar/HomeCalendar";
 import {HomeActualOrder} from "@/components/home/HomeActualOrder/HomeActualOrder";
 import {AddMaterial} from "@/components/common/Add/AddMaterial/AddMaterial";
 import {AddOrder} from "@/components/common/Add/AddOrder/AddOrder";
+import {Header} from "@/components/common/Header";
 
 const Home = () => {
 
@@ -13,10 +14,7 @@ const Home = () => {
         <div className="Home">
             <Navigation/>
             <div className="Home_container">
-                <div className="Home_header">
-                    <h1>Witaj Aneta!</h1>
-                    <h2>Od czego dzisiaj zaczynamy?</h2>
-                </div>
+                <Header text="Witaj Aneta!"/>
                 <div className="Home_wrapper">
                     <HomeCalendar/>
                     <HomeActualOrder/>

@@ -11,19 +11,6 @@
     width: 89vw;
 }
 
-.Home_container .Home_header {
-    padding: 40px 30px 10px 8%;
-}
-
-.Home_container .Home_header h1 {
-    margin-right: 10%;
-    display: inline;
-}
-
-.Home_container .Home_header h2 {
-    display: inline;
-}
-
 .Home_container .Home_wrapper {
     display: flex;
     justify-content: space-around;
