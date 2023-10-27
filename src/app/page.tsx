@@ -1,7 +1,7 @@
 import './page.css'
 import {LoginIntroduction} from "@/components/common/LoginIntroduction";
 import {LoginPortals} from "@/components/login/LoginPortals/LoginPortals";
-import {Divider} from "@/components/common/Divider";
+import {LoginDivider} from "@/components/login/LoginDivider/LoginDivider";
 import {LoginForm} from "@/components/login/LoginForm/LoginForm";
 
 const Login = () => {
@@ -12,7 +12,7 @@ const Login = () => {
                 <img src="/images/logo.png" alt=""/>
                 <h2>Logowanie</h2>
                 <LoginPortals/>
-                <Divider/>
+                <LoginDivider/>
                 <LoginForm/>
             </div>
         </div>

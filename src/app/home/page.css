@@ -98,7 +98,7 @@
 }
 
 .Home_container .Home_wrapper .Home_calendar .react-calendar {
-    background-color: var(--first_color);
+    background-color: #282828;
     min-height: 32vh;
     width: 100%;
 }
@@ -111,7 +111,7 @@
 
 .Home_container .Home_wrapper .Home_actual_order .Home_actual_order_container {
     padding: 20px 40px;
-    background-color: var(--first_color);
+    background-color: #282828;
     height: 32vh;
     border-radius: 20px;
 }
@@ -216,7 +216,7 @@
 
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container {
     padding: 25px 30px;
-    background-color: var(--first_color);
+    background-color: #282828;
     height: 47vh;
     border-radius: 20px;
 }
@@ -241,11 +241,16 @@
     flex-direction: column;
 }
 
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form label{
+    font-size: 1.2rem;
+}
+
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container form input,
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
     margin: 7px 0 15px;
     display: block;
     padding: 5px 15px;
+    width: 95%;
     font-size: 1rem;
     border: none;
     border-radius: 20px;
@@ -253,28 +258,24 @@
     color: var(--input_font_color);
 }
 
-.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form input::placeholder,
-.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea::placeholder {
-    color: var(--input_font_color);
-}
-
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container form textarea {
     padding: 10px 15px;
-    width: 100%;
+
 }
 
 .Home_container .Home_wrapper .Home_add_material .Home_add_material_container form label:nth-child(2) input {
     width: 40%;
 }
 
-/*.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form button {*/
-/*    padding: 10px 30px;*/
-/*    background-color: var(--background_color);*/
-/*    border: none;*/
-/*    border-radius: 20px;*/
-/*    font-size: 1rem;*/
-/*    cursor: pointer;*/
-/*}*/
+.Home_container .Home_wrapper .Home_add_material .Home_add_material_container form button {
+    padding: 10px 30px;
+    background-color: var(--background_color);
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
 
 
 /*Dodaj zamówienie*/
@@ -284,134 +285,13 @@
 }
 
 .Home_container .Home_wrapper .Home_add_order .Home_add_order_container {
-    padding: 25px 30px;
-    background-color: var(--first_color);
+    background-color: #282828;
     height: 47vh;
     border-radius: 20px;
 }
 
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container .Home_add_order_header {
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-}
+/*Zamówienie w trakcie*/
 
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container .Home_add_order_header a {
-    text-decoration: none;
-}
 
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container .Home_add_order_header a img {
-    padding-left: 5px;
-    height: 10px;
-}
 
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form {
-    padding: 15px 0;
-    display: flex;
-}
 
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form {
-    width: 100%;
-    height: 90%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_left_side,
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-    height: 100%;
-    width: 50%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label input,
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label textarea,
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label select {
-    margin-left: 15px;
-    padding: 5px 15px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--second_color);
-    color: var(--input_font_color);
-    color-scheme: dark;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label input::placeholder,
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label textarea::placeholder {
-    color: var(--input_font_color);
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label input[type=number] {
-    width: 20%;
-
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label input[type=date] {
-    margin-left: 25px;
-    width: 35%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label select {
-    border-right: 10px solid transparent;
-    width: 35%;
-
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form label {
-    display: block;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_order_add_material {
-    margin: 10px 0;
-}
-
-/*Right side*/
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side button:first-child {
-    margin: 10px 0 0 0;
-    width: 40%;
-    background-color: var(--second_color);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side .Home_divider_container {
-
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side .Home_divider_container .Home_divider {
-    display: inline;
-    height: 3px;
-    width: 30%;
-    background-color: var(--second_color);
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side .Home_divider_container .Home_divider p {
-    display: inline;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side .Divider {
-    margin: 10px 0;
-    width: 70%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side .Divider p{
-    font-size: 1rem;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side input  {
-    margin: 10px 15px 10px 0;
-    width: 35%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side textarea {
-    margin: 10px 0 0 0 ;
-    width: 90%;
-}
-
-.Home_container .Home_wrapper .Home_add_order .Home_add_order_container form .Home_add_order_right_side button {
-    width: 90%;
-}
