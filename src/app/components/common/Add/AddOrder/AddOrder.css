@@ -45,6 +45,10 @@
     width: 50%;
 }
 
+.Add_order .Add_order_container form .Add_order_right_side {
+    margin-top: 0;
+}
+
 .Add_order .Add_order_container form label input,
 .Add_order .Add_order_container form label textarea,
 .Add_order .Add_order_container form label select {
@@ -91,27 +95,21 @@
 
 .Add_order .Add_order_container form .Add_order_right_side button:first-child {
     margin: 10px 0 0 0;
-    width: 40%;
+    width: 35%;
     background-color: var(--second_color);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.Add_order .Add_order_container form .Add_order_right_side .Divider .Divider_line {
-    display: inline;
-    height: 3px;
-    width: 30%;
-    background-color: var(--second_color);
-}
-
-.Add_order .Add_order_container form .Add_order_right_side .Divider p {
-    display: inline;
+.Add_order .Add_order_container form .Add_order_right_side button:first-child img {
+    margin-right: 8px;
 }
 
 .Add_order .Add_order_container form .Add_order_right_side .Divider {
     margin: 10px 0;
-    width: 70%;
+    width: 90%;
+    justify-content: flex-start;
 }
 
 .Add_order .Add_order_container form .Add_order_right_side .Divider p{
@@ -129,5 +127,6 @@
 }
 
 .Add_order .Add_order_container form .Add_order_right_side button {
+    padding: 8px 20px;
     width: 90%;
 }

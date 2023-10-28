@@ -45,3 +45,7 @@
 .Add_material .Add_material_container form label:nth-child(2) input {
     width: 40%;
 }
+
+.Add_material .Add_material_container form button {
+    padding: 8px 20px;
+}
