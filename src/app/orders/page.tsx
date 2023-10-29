@@ -3,9 +3,7 @@ import './page.css';
 import {Navigation} from "@/components/common/Navigation";
 import {Header} from "@/components/common/Header";
 import {Btn} from "@/components/common/Btn";
-import {
-    HomeActualOrderElements
-} from "@/components/home/HomeActualOrder/HomeActualOrderElements/HomeActualOrderElements";
+import {SingleOrder} from "@/components/orders/SingleOrder";
 
 const Orders = () => {
     return (
@@ -23,94 +21,15 @@ const Orders = () => {
                         <Btn text="Dodaj nowe zamówienie"/>
                     </div>
                     <div className="Orders_content">
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
-                        <div className="Orders_single_order">
-                            <h2>Zam1</h2>
-                            <p>W trakcie</p>
-                            <HomeActualOrderElements/>
-                            <div className="Orders_single_order_buttons">
-                                <Btn text="Sczegóły"/>
-                                <Btn text="Edytuj"/>
-                                <Btn text="Usuń"/>
-                            </div>
-                        </div>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
+                        <SingleOrder/>
                     </div>
-
                 </div>
             </div>
         </div>
