@@ -12,7 +12,7 @@
 }
 
 .Materials_container .Materials_wrapper {
-    margin: 20px 40px 0;
+    margin: 40px 40px 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -21,16 +21,16 @@
 /*Order info*/
 
 .Materials_container .Materials_wrapper .Order_info_materials {
-    padding: 20px;
-    width: 50%;
-    height: 85vh;
+    padding: 25px 30px;
+    width: 48%;
+    height: 80vh;
     font-size: 1.2rem;
     background-color: var(--first_color);
     border-radius: var(--border_radius);
 }
 
 .Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container {
-    padding: 5px 35px;
+    padding: 5px 35px 20px;
     height: 100%;
     background-color: var(--first_color);
 }
@@ -74,7 +74,7 @@
 }
 
 .Materials_container .Materials_wrapper .Add_material .Add_material_container {
-    padding: 25px 40px;
+    padding: 25px 50px;
     height: 100%;
     justify-content: flex-start;
 }
@@ -82,7 +82,7 @@
 .Materials_container .Materials_wrapper .Add_material .Add_material_container form {
     display: flex;
     justify-content: space-around;
-    height: 75%;
+    height: 85%;
 }
 
 .Materials_container .Materials_wrapper .Add_material .Add_material_container form label {

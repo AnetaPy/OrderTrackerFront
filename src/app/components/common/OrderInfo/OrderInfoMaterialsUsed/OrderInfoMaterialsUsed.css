@@ -16,12 +16,12 @@
 
 .Order_info_materials_container::-webkit-scrollbar {
     width: 10px;
-    background: #fff;
+    background: #b7b7b7;
     border-radius: 10px;
 }
 
 .Order_info_materials_container::-webkit-scrollbar-thumb {
-    background: var(--input_font_color);
+    background: #6b6b6b;
     border-radius: 10px;
 }
 

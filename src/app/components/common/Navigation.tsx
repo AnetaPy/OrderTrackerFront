@@ -20,7 +20,6 @@ export const Navigation = () => {
                             <p>Materiały</p></a></li>
                     </div>
                     <div>
-                        <div className="Home_line"></div>
                         <li><a href="/contact"><img src="/icons/contact.png" alt="Envelope image"/><p>Kontakt</p>
                         </a></li>
                         <li><a href="/log-out"><img src="/icons/log_out.png" alt="Arrow right image"/><p>Wyloguj się</p>

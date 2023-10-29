@@ -20,7 +20,7 @@
     display: block;
     margin: 10px 0 15px -10px;
     padding: 12px 12px 12px 30px;
-    width: 95%;
+    width: 103%;
     font-size: 1.3rem;
     border: none;
     border-radius: var(--border_radius);
@@ -31,7 +31,7 @@
 .Login_container .Login_form form button {
     margin-top: 10px;
     padding: 12px;
-    width: 103%;
+    width: 100%;
     background-color: var(--first_color);
     border: none;
     border-radius: var(--border_radius);
