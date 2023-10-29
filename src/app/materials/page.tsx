@@ -1,7 +1,14 @@
+import React from "react";
+import './page.css';
+import {Navigation} from "@/components/common/Navigation";
+
 const Materials = () => {
     return (
-        <div>
-            <h1>Stan magazynowy</h1>
+        <div className="Materials">
+            <Navigation/>
+            <div className="Materials_container">
+
+            </div>
         </div>
     )
 }

@@ -1,0 +1,114 @@
+.Orders {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Orders_container {
+    display: flex;
+    flex-direction: column;
+    width: 89vw;
+}
+
+.Orders_container .Orders_wrapper {
+ padding: 15px 40px 0;
+}
+
+/*Buttons*/
+.Orders_container .Orders_wrapper button {
+    margin: 0 10px;
+    padding: 8px 25px;
+    background-color: #000;
+}
+
+.Orders_container .Orders_wrapper button.to_do {
+    color: yellow;
+}
+
+.Orders_container .Orders_wrapper button.in_progress {
+    color: orange;
+}
+
+.Orders_container .Orders_wrapper button.done {
+    color: green;
+}
+
+.Orders_container .Orders_wrapper button.delayed {
+    color: red;
+}
+
+.Orders_container .Orders_wrapper button.active {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--first_color);
+}
+
+.Orders_container .Orders_wrapper .Orders_top_bar button:last-child {
+    margin-left: 20%;
+    padding: 10px 50px;
+    background-color: var(--navy_color);
+    font-size: 1.1rem;
+}
+
+.Orders_container .Orders_wrapper .Orders_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/*Single orders*/
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order h2,
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order p {
+    display: block;
+    margin: 6px auto;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 30px;
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order h2 {
+    width: 60%;
+    font-size: 1.3rem;
+}
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order p {
+    width: 40%;
+    color: var(--input_font_color);
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order {
+    margin: 15px;
+    padding: 10px 20px 15px;
+    width: 22%;
+    border-radius: 20px;
+    background-color: var(--first_color);
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order .Home_elements{
+    margin: 6px 0 18px;
+    width: 100%;
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order .Home_elements h3 {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order .Home_elements_container{
+    margin-top: 7px;
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order .Orders_single_order_buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Orders_container .Orders_wrapper .Orders_content .Orders_single_order .Orders_single_order_buttons button {
+    margin: 0;
+    padding: 7px 20px;
+}
