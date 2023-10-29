@@ -6,7 +6,7 @@ export const AddMaterial = () => {
     return (
         <div className="Add_material">
             <div className="Add_material_container">
-                <h2>Dodaj nowy materiał</h2>
+                <h3>Dodaj nowy materiał</h3>
                 {/*<a href="/materials">zobacz stan mazynowy <img src="/icons/arrow_right.png" alt=""/></a>*/}
                 <form>
                     <label>

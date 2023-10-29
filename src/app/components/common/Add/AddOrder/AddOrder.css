@@ -4,10 +4,10 @@
 }
 
 .Add_order_container {
-    padding: 25px 30px;
+    padding: 25px 50px;
     background-color: var(--first_color);
     height: 47vh;
-    border-radius: 20px;
+    border-radius: var(--border_radius);
 }
 
 .Add_order .Add_order_container .Add_order_header {
@@ -56,7 +56,7 @@
     padding: 5px 15px;
     font-size: 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: var(--border_radius);
     background-color: var(--second_color);
     color: var(--input_font_color);
     color-scheme: dark;

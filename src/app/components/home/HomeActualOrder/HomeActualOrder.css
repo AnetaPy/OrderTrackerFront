@@ -7,7 +7,7 @@
     padding: 20px 40px;
     background-color: var(--first_color);
     height: 32vh;
-    border-radius: 20px;
+    border-radius: var(--border_radius);
 }
 
 .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items {
@@ -52,7 +52,7 @@
     margin-top: 15px;
     padding: 10px 15px;
     background-color: var(--background_color);
-    border-radius: 20px;
+    border-radius: var(--border_radius);
     height: 18vh;
 }
 

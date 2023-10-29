@@ -16,7 +16,6 @@ const Materials = () => {
                 <div className="Materials_wrapper">
                     <OrderInfoMaterialsUsed/>
                     <AddMaterial/>
-
                 </div>
             </div>
         </div>

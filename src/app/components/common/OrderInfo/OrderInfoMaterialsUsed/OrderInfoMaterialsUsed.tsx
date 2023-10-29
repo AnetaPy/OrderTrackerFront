@@ -1,12 +1,15 @@
 import React from "react";
 import './OrderInfoMaterialsUsed.css';
 
-export const OrderInfoMaterialsUsed = () => {
+interface Props {
+    text?: string;
+}
+
+export const OrderInfoMaterialsUsed = (props:Props) => {
     return (
         <div className="Order_info_materials">
-            <h3>Wykorzystane materiały</h3>
+            {props.text ? <h3>{props.text}</h3> : null}
             <div className="Order_info_materials_container">
-
                 <table>
                     <thead>
                     <tr>
@@ -17,6 +20,86 @@ export const OrderInfoMaterialsUsed = () => {
                     </thead>
 
                     <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Freaz</td>
+                        <td>3</td>
+                    </tr>
                     <tr>
                         <td>1</td>
                         <td>Freaz</td>

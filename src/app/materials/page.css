@@ -12,9 +12,102 @@
 }
 
 .Materials_container .Materials_wrapper {
+    margin: 20px 40px 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/*Order info*/
+
+.Materials_container .Materials_wrapper .Order_info_materials {
+    padding: 20px;
+    width: 50%;
+    height: 85vh;
+    font-size: 1.2rem;
+    background-color: var(--first_color);
+    border-radius: var(--border_radius);
+}
+
+.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container {
+    padding: 5px 35px;
+    height: 100%;
+    background-color: var(--first_color);
+}
+
+.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border: 2px var(--second_color) solid;
+}
+
+.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table thead tr th {
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 2px var(--second_color) solid;
+
+}
+
+.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table tbody tr td {
+    padding: 5px;
+    border: 2px var(--second_color) solid;
+}
+
+.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table tbody tr:nth-child(odd) {
+    background-color: var(--second_color);
+    border-radius: 10px;
+}
+
+/*Add material*/
+
+.Materials_container .Materials_wrapper .Add_material {
+    padding: 0;
+    width: 45%;
+    height: 100%;
+}
+
+.Materials_container .Materials_wrapper .Add_material h3 {
+    margin: 15px 0 5px;
+    font-size: 1.8rem;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container {
+    padding: 25px 40px;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form {
+    display: flex;
+    justify-content: space-around;
+    height: 75%;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form label {
+    font-size: 1.2rem;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form label input {
+    margin-top: 12px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form label:nth-child(3) {
+    height: 50%;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form label:nth-child(3) textarea {
+    margin-top: 12px;
+    height: 80%;
+}
+
+.Materials_container .Materials_wrapper .Add_material .Add_material_container form button {
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
 
 

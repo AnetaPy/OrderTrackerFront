@@ -19,7 +19,7 @@ export const HomeActualOrder = () => {
                         </div>
                     </div>
                     <OrderInfoElementsUsed/>
-                    <OrderInfoMaterialsUsed/>
+                    <OrderInfoMaterialsUsed text={"Wykorzystane materiały"}/>
                 </div>
             </div>
         </div>
