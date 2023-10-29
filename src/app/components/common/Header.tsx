@@ -9,7 +9,8 @@ export const Header = (props: Props) => {
     return (
         <div className="Header">
             <h1>{props.text}</h1>
-            <img src="/images/logo.png" alt="Logo OrderTracker"/>
+            <a href="/home"><img src="/images/logo.png" alt="Logo OrderTracker"/></a>
+
         </div>
     )
 }
