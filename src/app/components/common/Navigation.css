@@ -16,6 +16,10 @@
     height: 42px;
 }
 
+.Navigation .Navigation_user_details .Navigation_user_information {
+    margin-left: 7px;
+}
+
 .Navigation .Navigation_user_details .Navigation_user_information h3 {
     padding-bottom: 3px;
     font-size: 1.1rem;
