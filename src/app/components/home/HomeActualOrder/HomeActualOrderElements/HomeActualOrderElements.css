@@ -30,7 +30,8 @@
 }
 
 .Home_elements_container table {
-    width: 80%;
+    padding-left: 20px;
+    width: 100%;
 }
 
 .Home_elements_container table thead tr th:nth-child(2) {
