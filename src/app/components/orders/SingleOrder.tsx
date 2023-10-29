@@ -1,6 +1,6 @@
 import React from "react";
 import './SingleOrder.css';
-import {HomeActualOrderElements} from "@/components/home/HomeActualOrder/HomeActualOrderElements/HomeActualOrderElements";
+import {OrderInfoElementsUsed} from "@/components/common/OrderInfo/OrderInfoElementsUsed/OrderInfoElementsUsed";
 import {Btn} from "@/components/common/Btn";
 
 export const SingleOrder = () => {
@@ -8,7 +8,7 @@ export const SingleOrder = () => {
         <div className="Orders_single_order">
             <h2>Zam1</h2>
             <p>W trakcie</p>
-            <HomeActualOrderElements/>
+            <OrderInfoElementsUsed/>
             <div className="Orders_single_order_buttons">
                 <Btn text="Sczegóły"/>
                 <Btn text="Edytuj"/>

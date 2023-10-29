@@ -1,11 +1,11 @@
 import React from "react";
-import './HomeActualOrderMaterialsUsed.css';
+import './OrderInfoMaterialsUsed.css';
 
-export const HomeActualOrderMaterialsUsed = () => {
+export const OrderInfoMaterialsUsed = () => {
     return (
-        <div className="Home_materials_used">
+        <div className="Order_info_materials">
             <h3>Wykorzystane materiały</h3>
-            <div className="Home_materials_used_container">
+            <div className="Order_info_materials_container">
 
                 <table>
                     <thead>

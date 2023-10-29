@@ -26,18 +26,18 @@
     color: var(--input_font_color);
 }
 
-.Orders_single_order .Home_elements{
+.Orders_single_order .Order_info_elements{
     margin: 6px 0 18px;
     width: 100%;
 }
 
-.Orders_single_order .Home_elements h3 {
+.Orders_single_order .Order_info_elements h3 {
     margin-left: 10px;
     font-weight: normal;
     font-size: 1.1rem;
 }
 
-.Orders_single_order .Home_elements .Home_elements_container{
+.Orders_single_order .Order_info_elements .Order_info_elements_container{
     margin-top: 7px;
 }
 

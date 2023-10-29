@@ -1,8 +1,8 @@
-.Home_materials_used{
+.Order_info_materials{
     width: 30%;
 }
 
-.Home_materials_used_container{
+.Order_info_materials_container{
     margin-top: 15px;
     padding: 10px 15px;
     background-color: var(--background_color);
@@ -10,26 +10,26 @@
     height: 18vh;
 }
 
-.Home_materials_used_container {
+.Order_info_materials_container {
     overflow: auto;
 }
 
-.Home_materials_used_container::-webkit-scrollbar {
+.Order_info_materials_container::-webkit-scrollbar {
     width: 10px;
     background: #fff;
     border-radius: 10px;
 }
 
-.Home_materials_used_container::-webkit-scrollbar-thumb {
+.Order_info_materials_container::-webkit-scrollbar-thumb {
     background: var(--input_font_color);
     border-radius: 10px;
 }
 
-.Home_materials_used_container table thead tr th {
+.Order_info_materials_container table thead tr th {
     text-align: left;
 }
 
-.Home_materials_used_container table {
+.Order_info_materials_container table {
     width: 80%;
 }
 

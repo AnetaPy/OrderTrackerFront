@@ -1,7 +1,7 @@
 import React from "react";
 import './HomeActualOrder.css';
-import {HomeActualOrderMaterialsUsed} from "@/components/home/HomeActualOrder/HomeActualOrderMaterialsUsed/HomeActualOrderMaterialsUsed";
-import {HomeActualOrderElements} from "@/components/home/HomeActualOrder/HomeActualOrderElements/HomeActualOrderElements";
+import {OrderInfoMaterialsUsed} from "@/components/common/OrderInfo/OrderInfoMaterialsUsed/OrderInfoMaterialsUsed";
+import {OrderInfoElementsUsed} from "@/components/common/OrderInfo/OrderInfoElementsUsed/OrderInfoElementsUsed";
 
 export const HomeActualOrder = () => {
     return (
@@ -18,8 +18,8 @@ export const HomeActualOrder = () => {
                             <p>Do końca pozostało 22 dni</p>
                         </div>
                     </div>
-                    <HomeActualOrderElements/>
-                    <HomeActualOrderMaterialsUsed/>
+                    <OrderInfoElementsUsed/>
+                    <OrderInfoMaterialsUsed/>
                 </div>
             </div>
         </div>

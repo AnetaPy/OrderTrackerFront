@@ -1,11 +1,11 @@
 import React from "react";
-import './HomeActualOrderElements.css';
+import './OrderInfoElementsUsed.css';
 
-export const HomeActualOrderElements = () => {
+export const OrderInfoElementsUsed = () => {
     return (
-        <div className="Home_elements">
+        <div className="Order_info_elements">
             <h3>Elementy</h3>
-            <div className="Home_elements_container">
+            <div className="Order_info_elements_container">
                 <table>
                     <thead>
                     <tr>
