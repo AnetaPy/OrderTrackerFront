@@ -1,6 +1,6 @@
 import React from "react";
 import './AddMaterial.css';
-import {Btn} from "@/components/common/Btn";
+import {Btn} from "@/components/common/Btn/Btn";
 
 export const AddMaterial = () => {
     return (

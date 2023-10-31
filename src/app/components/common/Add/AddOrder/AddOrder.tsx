@@ -1,7 +1,7 @@
 import React from "react";
 import './AddOrder.css';
-import {Btn} from "@/components/common/Btn";
-import {Divider} from "@/components/common/Divider";
+import {Btn} from "@/components/common/Btn/Btn";
+import {Divider} from "@/components/common/Divider/Divider";
 
 export const AddOrder = () => {
     return (
