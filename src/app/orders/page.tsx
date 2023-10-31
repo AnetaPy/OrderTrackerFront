@@ -1,8 +1,8 @@
 import React from "react";
 import './page.css';
-import {Navigation} from "@/components/common/Navigation";
-import {Header} from "@/components/common/Header";
-import {Btn} from "@/components/common/Btn";
+import {Navigation} from "@/components/common/Navigation/Navigation";
+import {Header} from "@/components/common/Header/Header";
+import {Btn} from "@/components/common/Btn/Btn";
 import {SingleOrder} from "@/components/orders/SingleOrder";
 
 const Orders = () => {

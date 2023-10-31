@@ -1,7 +1,7 @@
 import './page.css'
-import {LoginIntroduction} from "@/components/common/LoginIntroduction";
+import {LoginIntroduction} from "@/components/common/LoginIntroduction/LoginIntroduction";
 import {LoginPortals} from "@/components/login/LoginPortals/LoginPortals";
-import {Divider} from "@/components/common/Divider";
+import {Divider} from "@/components/common/Divider/Divider";
 import {LoginForm} from "@/components/login/LoginForm/LoginForm";
 
 const Login = () => {

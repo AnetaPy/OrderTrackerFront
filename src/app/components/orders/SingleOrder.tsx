@@ -1,7 +1,7 @@
 import React from "react";
 import './SingleOrder.css';
 import {OrderInfoElementsUsed} from "@/components/common/OrderInfo/OrderInfoElementsUsed/OrderInfoElementsUsed";
-import {Btn} from "@/components/common/Btn";
+import {Btn} from "@/components/common/Btn/Btn";
 
 export const SingleOrder = () => {
     return (

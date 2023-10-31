@@ -1,6 +1,6 @@
 import React from "react";
 import './page.css';
-import {LoginIntroduction} from "@/components/common/LoginIntroduction";
+import {LoginIntroduction} from "@/components/common/LoginIntroduction/LoginIntroduction";
 import {SignupForm} from "@/components/signup/SignupForm/SignupForm";
 
 const Signup = () => {

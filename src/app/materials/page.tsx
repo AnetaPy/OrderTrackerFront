@@ -1,7 +1,7 @@
 import React from "react";
 import './page.css';
-import {Navigation} from "@/components/common/Navigation";
-import {Header} from "@/components/common/Header";
+import {Navigation} from "@/components/common/Navigation/Navigation";
+import {Header} from "@/components/common/Header/Header";
 import {
     OrderInfoMaterialsUsed
 } from "@/components/common/OrderInfo/OrderInfoMaterialsUsed/OrderInfoMaterialsUsed";
