@@ -32,6 +32,10 @@
     font-size: 1.2rem;
 }
 
+.Home_actual_order .Home_actual_order_container p.Home_notification_green {
+    color: green;
+}
+
 .Home_actual_order .Home_actual_order_container p.Home_notification_red {
     color: red;
 }
@@ -49,8 +53,8 @@
 }
 
 .Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container{
-    margin-top: 15px;
-    padding: 10px 15px;
+    margin-top: 10px;
+    padding: 20px 25px;
     background-color: var(--background_color);
     border-radius: var(--border_radius);
     height: 18vh;
