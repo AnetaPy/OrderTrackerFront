@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './HomeActualOrder.css';
-import {OrderInfoMaterialsUsed} from "@/components/common/OrderInfo/OrderInfoMaterialsUsed";
-import {OrderInfoElementsUsed} from "@/components/common/OrderInfo/OrderInfoElementsUsed";
+import {OrderInfoItemsUsed} from "@/components/common/OrderInfo/OrderInfoItemsUsed";
 import {Spinner} from "@/components/common/Spinner/Spinner";
 import {OrderEntity} from "types";
 
@@ -51,8 +50,8 @@ export const HomeActualOrder = (props: Props) => {
                             <p>Do końca pozostało {difference} dni</p>
                         </div>
                     </div>
-                    <OrderInfoElementsUsed elements={order.elements} text="Elementy"/>
-                    <OrderInfoMaterialsUsed materials={order.materials} text="Wykorzystane materiały"/>
+                    <OrderInfoItemsUsed items={order.elements} text="Elementy"/>
+                    <OrderInfoItemsUsed items={order.materials} text="Wykorzystane materiały"/>
                 </div>
             </div>
         </div>

@@ -2,10 +2,8 @@ import React from "react";
 import './page.css';
 import {Navigation} from "@/components/common/Navigation/Navigation";
 import {Header} from "@/components/common/Header/Header";
-import {
-    OrderInfoMaterialsUsed
-} from "@/components/common/OrderInfo/OrderInfoMaterialsUsed";
 import {AddMaterial} from "@/components/common/Add/AddMaterial/AddMaterial";
+import {OrderInfoItemsUsed} from "@/components/common/OrderInfo/OrderInfoItemsUsed";
 
 const Materials = () => {
     return (
@@ -14,7 +12,7 @@ const Materials = () => {
             <div className="Materials_container">
                 <Header text="Stan magazynowy"/>
                 <div className="Materials_wrapper">
-                    <OrderInfoMaterialsUsed/>
+                    <OrderInfoItemsUsed/>
                     <AddMaterial/>
                 </div>
             </div>

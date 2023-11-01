@@ -1,18 +1,18 @@
 import React from "react";
 import './OrderInfoItemsUsed.css';
 import {ItemTableRow} from "@/components/common/OrderInfo/ItemTableRow";
-import {MaterialEntity} from "types";
+import {ItemEntity} from "types";
 
 interface Props {
-    text?: string;
-    materials: (MaterialEntity)[];
+    text: string;
+    items: (ItemEntity)[];
 }
 
-export const OrderInfoMaterialsUsed = (props: Props) => {
+export const OrderInfoItemsUsed = (props:Props) => {
     return (
-        <div className="Order_info_materials">
-            {props.text ? <h3>{props.text}</h3> : null}
-            <div className="Order_info_materials_container">
+        <div className="Order_info_items">
+             <h3>{props.text}</h3>
+            <div className="Order_info_items_container">
                 <table>
                     <thead>
                     <tr>
@@ -23,7 +23,7 @@ export const OrderInfoMaterialsUsed = (props: Props) => {
                     </thead>
                     <tbody>
                     {
-                        props.materials.map((material, index) => <ItemTableRow key={material.id} lp={index+1} name={material.name} amount={material.amount}/>)
+                        props.items.map((element, index) => <ItemTableRow key={element.id} lp={index+1} name={element.name} amount={element.amount}/>)
                     }
                     </tbody>
                 </table>
