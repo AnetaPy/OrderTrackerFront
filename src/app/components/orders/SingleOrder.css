@@ -1,7 +1,7 @@
 .Orders_single_order {
-    margin: 35px 35px 20px;
-    padding: 20px 30px;
-    width: 25%;
+    margin: 35px 20px 20px;
+    padding: 20px;
+    width: 26%;
     border-radius: var(--border_radius);
     background-color: var(--first_color);
 }
@@ -10,40 +10,46 @@
 .Orders_single_order p {
     display: block;
     margin: 6px auto;
-    height: 30px;
+    height: 35px;
     background-color: black;
     text-align: center;
     border-radius: var(--border_radius);
-    line-height: 30px;
+    line-height: 35px;
 }
+
 .Orders_single_order h2 {
     width: 60%;
     font-size: 1.3rem;
 }
-
 .Orders_single_order p {
     width: 40%;
     color: var(--input_font_color);
 }
 
-.Orders_single_order .Order_info_elements{
-    margin: 6px 0 18px;
+.Orders_single_order .Orders_single_order_items {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Orders_single_order .Order_info_items{
+    margin: 10px 0;
     width: 100%;
 }
 
-.Orders_single_order .Order_info_elements h3 {
+.Orders_single_order .Order_info_items h3 {
     margin-left: 10px;
     font-weight: normal;
     font-size: 1.1rem;
 }
 
-.Orders_single_order .Order_info_elements .Order_info_elements_container{
-    margin-top: 7px;
+.Orders_single_order .Order_info_items .Order_info_items_container{
+    margin: 7px;
     height: 13vh;
 }
 
-.Orders_single_order .Order_info_elements .Order_info_elements_container table thead tr th,
-.Orders_single_order .Order_info_elements .Order_info_elements_container table tbody tr td{
+.Orders_single_order .Order_info_items .Order_info_items_container table thead tr th,
+.Orders_single_order .Order_info_items .Order_info_items_container table tbody tr td{
     color: var(--input_font_color);
 
 }
@@ -55,5 +61,5 @@
 
 .Orders_single_order .Orders_single_order_buttons button {
     margin: 0;
-    padding: 7px 20px;
+    padding: 8px 30px;
 }
