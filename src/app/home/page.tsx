@@ -11,7 +11,6 @@ import {AddOrder} from "@/components/common/Add/AddOrder/AddOrder";
 import {Header} from "@/components/common/Header/Header";
 
 const Home = () => {
-
     return (
         <div className="Home">
             <Navigation/>
@@ -19,7 +18,7 @@ const Home = () => {
                 <Header text="Witaj Aneta!"/>
                 <div className="Home_wrapper">
                     <HomeCalendar/>
-                    <HomeActualOrder id="13d02494-77cf-11ee-9ece-34cff6159130"/>
+                    <HomeActualOrder/>
                     <AddMaterial/>
                     <AddOrder/>
                 </div>

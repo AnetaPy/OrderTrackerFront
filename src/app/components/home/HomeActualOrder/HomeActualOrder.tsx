@@ -4,16 +4,12 @@ import {OrderInfoItemsUsed} from "@/components/common/OrderInfo/OrderInfoItemsUs
 import {Spinner} from "@/components/common/Spinner/Spinner";
 import {OrderEntity} from "types";
 
-interface Props {
-    id: string;
-}
-
-export const HomeActualOrder = (props: Props) => {
+export const HomeActualOrder = () => {
     const [order, setOrder] = useState<OrderEntity | null>(null);
     let difference;
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/home/${props.id}`);
+            const res = await fetch(`http://localhost:3001/home`);
             const data = await res.json();
             setOrder(data);
         })()
@@ -47,7 +43,9 @@ export const HomeActualOrder = (props: Props) => {
                         <h3>Termin</h3>
                         <div className="Home_deadline_container">
                             <h4>{order.date ? new Date(order.date).toLocaleDateString() : null}</h4>
-                            <p>Do końca pozostało {difference} dni</p>
+                            {difference > 0
+                                ? <p>Pozostało Ci {difference} dni do końca terminu</p>
+                                : <p>Jesteś {-difference} dni po terminie</p>}
                         </div>
                     </div>
                     <OrderInfoItemsUsed items={order.elements} text="Elementy"/>
