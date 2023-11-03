@@ -9,7 +9,7 @@ export const AddOrder = () => {
             <div className="Add_order_container">
                 <div className="Add_order_header">
                     <h2>Dodaj nowe zamówienie</h2>
-                    <a href="/materials">zobacz wszystkie <img src="/icons/arrow_right.png" alt=""/></a>
+                    <a href="/orders">zobacz wszystkie <img src="/icons/arrow_right.png" alt=""/></a>
                 </div>
                 <form>
                     <div className="Add_order_left_side">

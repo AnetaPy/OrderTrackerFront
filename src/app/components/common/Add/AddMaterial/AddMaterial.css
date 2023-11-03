@@ -6,22 +6,39 @@
 .Add_material .Add_material_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 25px 30px;
     background-color: var(--first_color);
     height: 47vh;
     border-radius: var(--border_radius);
 }
 
+.Add_material .Add_material_container h2 {
+    margin-top: 10px;
+}
+
+.Add_material .Add_material_container a {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C7C7C7FF;
+}
+
+.Add_material .Add_material_container a img {
+    padding-left: 3px;
+    height: 11px;
+
+}
+
 .Add_material .Add_material_container form {
-    padding-top: 20px;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
 }
 
-.Add_material .Add_material_container form input,
-.Add_material .Add_material_container form textarea {
-    margin: 7px 0 15px;
+.Add_material .Add_material_container form input {
+    margin: 10px 0 20px;
     display: block;
     padding: 5px 15px;
     font-size: 1rem;
@@ -31,14 +48,8 @@
     color: var(--input_font_color);
 }
 
-.Add_material .Add_material_container form input::placeholder,
-.Add_material .Add_material_container form textarea::placeholder {
+.Add_material .Add_material_container form input::placeholder {
     color: var(--input_font_color);
-}
-
-.Add_material .Add_material_container form textarea {
-    padding: 10px 15px;
-    width: 100%;
 }
 
 .Add_material .Add_material_container form label:nth-child(2) input {
@@ -46,5 +57,6 @@
 }
 
 .Add_material .Add_material_container form button {
+    margin-top: 35%;
     padding: 8px 20px;
 }
