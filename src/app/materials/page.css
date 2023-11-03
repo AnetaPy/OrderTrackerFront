@@ -20,7 +20,7 @@
 
 /*Order info*/
 
-.Materials_container .Materials_wrapper .Order_info_materials {
+.Materials_container .Materials_wrapper .Order_info_items {
     padding: 25px 30px;
     width: 48%;
     height: 80vh;
@@ -29,20 +29,21 @@
     border-radius: var(--border_radius);
 }
 
-.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container {
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container {
     padding: 5px 35px 20px;
     height: 100%;
     background-color: var(--first_color);
 }
 
-.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table{
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table{
     margin: 0 auto;
+    padding: 0;
     width: 100%;
     text-align: center;
     border: 2px var(--second_color) solid;
 }
 
-.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table thead tr th {
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th {
     padding: 10px;
     font-size: 1.3rem;
     text-align: center;
@@ -50,12 +51,12 @@
 
 }
 
-.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table tbody tr td {
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr td {
     padding: 5px;
     border: 2px var(--second_color) solid;
 }
 
-.Materials_container .Materials_wrapper .Order_info_materials .Order_info_materials_container table tbody tr:nth-child(odd) {
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr:nth-child(odd) {
     background-color: var(--second_color);
     border-radius: 10px;
 }

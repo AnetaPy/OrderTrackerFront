@@ -4,7 +4,7 @@ import {ItemTableRow} from "@/components/common/OrderInfo/ItemTableRow";
 import {ItemEntity} from "types";
 
 interface Props {
-    text: string;
+    text?: string;
     items: (ItemEntity)[];
 }
 
