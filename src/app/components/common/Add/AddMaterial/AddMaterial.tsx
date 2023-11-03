@@ -3,7 +3,11 @@ import './AddMaterial.css';
 import {Btn} from "@/components/common/Btn/Btn";
 import {Spinner} from "@/components/common/Spinner/Spinner";
 
-export const AddMaterial = () => {
+interface Props {
+    onMaterialsChange?: () => void;
+}
+
+export const AddMaterial = (props: Props) => {
     const [loading, setLoading] = useState(false);
     const [id, setId] = useState(null);
     const [form, setForm] = useState({
@@ -24,11 +28,11 @@ export const AddMaterial = () => {
                 body: JSON.stringify(form)
             });
             const data = await res.json();
-            console.log(data)
             setId(data.id);
         } finally {
             setLoading(false);
         }
+        props.onMaterialsChange ? props.onMaterialsChange() : null;
     }
 
     if (loading) {
