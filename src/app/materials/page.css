@@ -35,7 +35,7 @@
     background-color: var(--first_color);
 }
 
-.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table{
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table {
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -45,15 +45,22 @@
 
 .Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th {
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     border: 2px var(--second_color) solid;
+}
 
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(2) {
+    width: 40%;
 }
 
 .Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr td {
     padding: 5px;
     border: 2px var(--second_color) solid;
+}
+
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr td a {
+    text-decoration: none;
 }
 
 .Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr:nth-child(odd) {
@@ -66,7 +73,7 @@
 .Materials_container .Materials_wrapper .Add_material {
     padding: 0;
     width: 35%;
-    height: 57%;
+    height: 47vh;
 }
 
 .Materials_container .Materials_wrapper .Add_material h3 {
@@ -99,6 +106,4 @@
     padding: 12px;
     font-size: 1.2rem;
 }
-
-
 

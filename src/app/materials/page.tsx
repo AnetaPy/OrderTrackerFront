@@ -11,14 +11,18 @@ import {ItemEntity} from "types";
 
 const Materials = () => {
     const [allMaterials, setAllMaterials] = useState<ItemEntity[] | null>(null);
+
+    const refreshItems = async () => {
+        setAllMaterials(null);
+        const res = await fetch('http://localhost:3001/materials');
+        const data = await res.json();
+        setAllMaterials(data);
+    }
+
     useEffect(() => {
-        (async () => {
-            const res = await fetch(`http://localhost:3001/materials`);
-            const data = await res.json();
-            setAllMaterials(data);
-        })()
-    }, []);
-    console.log(allMaterials)
+        refreshItems();
+    }, [])
+
     return (
         <div className="Materials">
             <Navigation/>
@@ -27,9 +31,9 @@ const Materials = () => {
                 <div className="Materials_wrapper">
                     {allMaterials === null
                         ? <Spinner/>
-                        : <OrderInfoItemsUsed items={allMaterials}/>
+                        : <OrderInfoItemsUsed onMaterialsChange={refreshItems} items={allMaterials} btn={true}/>
                     }
-                    <AddMaterial/>
+                    <AddMaterial onMaterialsChange={refreshItems}/>
                 </div>
             </div>
         </div>

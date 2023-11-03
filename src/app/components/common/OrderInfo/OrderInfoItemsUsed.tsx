@@ -6,12 +6,16 @@ import {ItemEntity} from "types";
 interface Props {
     text?: string;
     items: (ItemEntity)[];
+    btn?: boolean;
+    onMaterialsChange?: () => void;
 }
 
-export const OrderInfoItemsUsed = (props:Props) => {
+export const OrderInfoItemsUsed = (props: Props) => {
+    const {onMaterialsChange, text, btn, items} = props;
+
     return (
         <div className="Order_info_items">
-             <h3>{props.text}</h3>
+            <h3>{text}</h3>
             <div className="Order_info_items_container">
                 <table>
                     <thead>
@@ -19,11 +23,15 @@ export const OrderInfoItemsUsed = (props:Props) => {
                         <th>Lp</th>
                         <th>Nazwa</th>
                         <th>Ilość</th>
+                        {btn ? <th>Usuń materiał</th> : null}
                     </tr>
                     </thead>
                     <tbody>
                     {
-                        props.items.map((element, index) => <ItemTableRow key={element.id} lp={index+1} name={element.name} amount={element.amount}/>)
+                        items.map((element, index) => <ItemTableRow key={element.id} lp={index + 1}
+                                                                    id={element.id} name={element.name}
+                                                                    amount={element.amount} btn={btn}
+                                                                    onMaterialsChange={onMaterialsChange ? onMaterialsChange : null}/>)
                     }
                     </tbody>
                 </table>
