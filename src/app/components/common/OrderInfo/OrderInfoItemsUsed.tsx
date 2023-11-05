@@ -23,6 +23,7 @@ export const OrderInfoItemsUsed = (props: Props) => {
                         <th>Nazwa</th>
                         <th>Ilość</th>
                         {btn ? <th>Usuń materiał</th> : null}
+                        {btn ? <th>Edytuj materiał</th> : null}
                     </tr>
                     </thead>
                     <tbody>
