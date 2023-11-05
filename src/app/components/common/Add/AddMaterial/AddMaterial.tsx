@@ -4,7 +4,7 @@ import {Btn} from "@/components/common/Btn/Btn";
 import {Spinner} from "@/components/common/Spinner/Spinner";
 
 interface Props {
-    onMaterialsChange?: () => void;
+    onMaterialsChange: () => void;
 }
 
 export const AddMaterial = (props: Props) => {
@@ -31,7 +31,7 @@ export const AddMaterial = (props: Props) => {
         } finally {
             setLoading(false);
         }
-        props?.onMaterialsChange;
+        props.onMaterialsChange();
     }
 
     if (loading) {

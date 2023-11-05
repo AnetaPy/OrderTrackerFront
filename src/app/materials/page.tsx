@@ -21,7 +21,7 @@ const Materials = () => {
 
     useEffect(() => {
         refreshItems();
-    }, [])
+    },[])
 
     return (
         <div className="Materials">
