@@ -20,7 +20,6 @@ export const OrderInfoItemsUsed = (props: Props) => {
                 <table>
                     <thead>
                     <tr>
-                        <th>Lp</th>
                         <th>Nazwa</th>
                         <th>Ilość</th>
                         {btn ? <th>Usuń materiał</th> : null}
@@ -28,7 +27,7 @@ export const OrderInfoItemsUsed = (props: Props) => {
                     </thead>
                     <tbody>
                     {
-                        items.map((element, index) => <ItemTableRow key={element.id} lp={index + 1}
+                        items?.map((element) => <ItemTableRow key={element.id}
                                                                     id={element.id} name={element.name}
                                                                     amount={element.amount} btn={btn}
                                                                     onMaterialsChange={onMaterialsChange ? onMaterialsChange : null}/>)

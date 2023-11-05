@@ -31,16 +31,3 @@
     text-align: left;
 }
 
-.Order_info_items_container table thead tr th:nth-child(1) {
-    width: 20%;
-}
-
-.Order_info_items_container table thead tr th:nth-child(2) {
-    width: 50%;
-}
-
-.Order_info_items_container table thead tr th:nth-child(3) {
-    width: 20%;
-}
-
-

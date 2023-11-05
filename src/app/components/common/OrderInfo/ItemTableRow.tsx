@@ -2,7 +2,6 @@ import React, {SyntheticEvent} from "react";
 
 interface Props {
     id: string;
-    lp: number;
     name: string;
     amount: number;
     btn?: boolean;
