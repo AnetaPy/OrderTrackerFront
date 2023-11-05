@@ -16,7 +16,7 @@ export const ItemTableRow = (props: Props) => {
             return
         }
 
-        const res = await fetch(`http://localhost:3001/materials/${props.id}`, {
+        const res = await fetch(`http://localhost:3001/material/${props.id}`, {
             method: 'DELETE',
         })
 
@@ -30,7 +30,6 @@ export const ItemTableRow = (props: Props) => {
 
     return (
         <tr>
-            <td>{props.lp}</td>
             <td>{props.name}</td>
             <td>{props.amount}</td>
             {props.btn ? <td><a href="#" onClick={deleteItem}>🗑️ Usuń</a></td> : null}

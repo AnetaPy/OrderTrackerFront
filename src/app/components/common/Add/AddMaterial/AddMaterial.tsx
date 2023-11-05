@@ -13,14 +13,13 @@ export const AddMaterial = (props: Props) => {
     const [form, setForm] = useState({
         name: '',
         amount: 0,
-        comment: '',
     });
 
     const saveMaterial = async (e: SyntheticEvent) => {
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await fetch(`http://localhost:3001/materials`, {
+            const res = await fetch(`http://localhost:3001/material`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -32,7 +31,7 @@ export const AddMaterial = (props: Props) => {
         } finally {
             setLoading(false);
         }
-        props.onMaterialsChange ? props.onMaterialsChange() : null;
+        props?.onMaterialsChange;
     }
 
     if (loading) {

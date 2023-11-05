@@ -14,7 +14,7 @@ const Materials = () => {
 
     const refreshItems = async () => {
         setAllMaterials(null);
-        const res = await fetch('http://localhost:3001/materials');
+        const res = await fetch('http://localhost:3001/material');
         const data = await res.json();
         setAllMaterials(data);
     }

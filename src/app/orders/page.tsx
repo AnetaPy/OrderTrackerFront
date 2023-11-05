@@ -13,7 +13,7 @@ const Orders = () => {
     const [allOrders, setAllOrders] = useState<OrderEntity[] | null>(null);
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/orders`);
+            const res = await fetch(`http://localhost:3001/order`);
             const data = await res.json();
             setAllOrders(data);
         })()
