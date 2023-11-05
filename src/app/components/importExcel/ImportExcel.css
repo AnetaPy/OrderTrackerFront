@@ -1,0 +1,12 @@
+.importExcel {
+    overflow: auto;
+    height: 80%;
+}
+
+.importExcel table {
+    width: 90%;
+}
+
+.importExcel table tr td {
+    text-align: center;
+}
