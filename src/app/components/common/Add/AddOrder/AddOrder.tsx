@@ -3,6 +3,7 @@ import './AddOrder.css';
 import {Btn} from "@/components/common/Btn/Btn";
 import {ImportExcel} from "@/components/importExcel/ImportExcel";
 import {ItemEntity} from "types";
+import Link from "next/link";
 
 export const AddOrder = () => {
     const [allMaterials, setAllMaterials] = useState<ItemEntity[] | null>(null);
@@ -99,8 +100,8 @@ export const AddOrder = () => {
             <div className="Add_order">
                 <div className="Add_order_container">
                     <h3>Zamówienie "{form.name}" zostało poprawnie dodane do bazy.</h3>
-                    <a href="/orders">Zobacz wszystkie zamówienia <img src="/icons/arrow_right.png" alt=""/></a>
-                    <a href="/home">Odśwież stronę główną <img src="/icons/arrow_right.png" alt=""/></a>
+                    <Link href="/orders">Zobacz wszystkie zamówienia <img src="/icons/arrow_right.png" alt="arrow"/></Link>
+                    <Link href="/home">Odśwież stronę główną <img src="/icons/arrow_right.png" alt="arrow"/></Link>
                 </div>
             </div>
         )
@@ -111,8 +112,7 @@ export const AddOrder = () => {
             <div className="Add_order_container">
                 <div className="Add_order_header">
                     <h2>Dodaj nowe zamówienie</h2>
-                    <a href="/orders" className="see_all">zobacz wszystkie <img src="/icons/arrow_right.png"
-                                                                                alt=""/></a>
+                    <Link href="/orders" className="see_all">zobacz wszystkie <img src="/icons/arrow_right.png" alt="arrow"/></Link>
                 </div>
                 <form onSubmit={saveOrder}>
                     <div className="Add_order_left_side">

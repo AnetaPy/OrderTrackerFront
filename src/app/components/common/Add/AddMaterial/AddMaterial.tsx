@@ -2,6 +2,7 @@ import React, {SyntheticEvent, useState} from "react";
 import './AddMaterial.css';
 import {Btn} from "@/components/common/Btn/Btn";
 import {Spinner} from "@/components/common/Spinner/Spinner";
+import Link from "next/link";
 
 interface Props {
     onMaterialsChange: () => void;
@@ -42,7 +43,7 @@ export const AddMaterial = (props: Props) => {
         return <div className="Add_material">
             <div className="Add_material_container">
                 <h2>Materiał "{form.name}" został poprawnie dodany do bazy</h2>
-                <a href="/materials">Zobacz stan mazynowy <img src="/icons/arrow_right.png" alt=""/></a>
+                <Link href="/materials">Zobacz stan mazynowy <img src="/icons/arrow_right.png" alt="arrow"/></Link>
             </div>
         </div>
     }

@@ -1,5 +1,6 @@
 import React from "react";
 import './LoginForm.css';
+import Link from "next/link";
 
 export const LoginForm = () => {
     return(
@@ -31,9 +32,7 @@ export const LoginForm = () => {
                     {/*{loading ? "Please wait.." : "Submit"}*/}
                 </button>
             </form>
-            <a href="/signup">
-                <p>Nie masz konta? <span>Zarejestruj się!</span></p>
-            </a>
+            <Link href="/signup"><p>Nie masz konta? <span>Zarejestruj się!</span></p></Link>
         </div>
     )
 };

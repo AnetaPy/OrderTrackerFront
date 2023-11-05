@@ -1,6 +1,7 @@
 import React, {SyntheticEvent} from "react";
 import Popup from "reactjs-popup";
 import {EditMaterial} from "@/components/common/Edit/EditMaterial/EditMaterial";
+import Link from "next/link";
 
 interface Props {
     id: string;
@@ -33,9 +34,9 @@ export const ItemTableRow = (props: Props) => {
         <tr>
             <td>{props.name}</td>
             <td>{props.amount}</td>
-            {props.btn ? <td><a href="#" onClick={deleteItem}>🗑️ Usuń</a></td> : null}
+            {props.btn ? <td><Link href="#" onClick={deleteItem}>🗑️ Usuń</Link></td> : null}
             {props.btn ?
-                <Popup closeOnDocumentClick trigger={<td><a href="#">🖊️ Edytuj</a></td>}
+                <Popup closeOnDocumentClick trigger={<td><Link href="#">🖊️ Edytuj</Link></td>}
                        position="right center">
                     <EditMaterial id={props.id} name={props.name} amount={props.amount} onMaterialsChange={props.onMaterialsChange}/>
                 </Popup>
