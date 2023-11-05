@@ -13,7 +13,8 @@
     "react": "^18",
     "react-calendar": "^4.6.1",
     "react-dom": "^18",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "20.8.7",
