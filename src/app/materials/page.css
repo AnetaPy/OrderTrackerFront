@@ -50,8 +50,8 @@
     border: 2px var(--second_color) solid;
 }
 
-.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(2) {
-    width: 40%;
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(1) {
+    width: 35%;
 }
 
 .Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table tbody tr td {

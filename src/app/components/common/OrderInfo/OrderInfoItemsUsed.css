@@ -4,7 +4,7 @@
 
 .Order_info_items_container{
     margin-top: 10px;
-    padding: 15px;
+    padding: 15px 25px;
     background-color: var(--background_color);
     border-radius: var(--border_radius);
     height: 18vh;
@@ -31,3 +31,7 @@
     text-align: left;
 }
 
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(3),
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(4) {
+    width: 20%;
+}
