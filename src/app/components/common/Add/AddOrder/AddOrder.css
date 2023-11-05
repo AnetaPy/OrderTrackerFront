@@ -10,17 +10,40 @@
     border-radius: var(--border_radius);
 }
 
+.Add_order .Add_order_container h3{
+    margin: 20px 0;
+}
+
+.Add_order .Add_order_container a{
+    display: block;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C7C7C7FF;
+}
+
+.Add_order .Add_order_container a:nth-child(3) {
+    margin-top: 15px;
+
+}
+
+.Add_order .Add_order_container a img {
+    padding-left: 3px;
+    height: 11px;
+}
+
 .Add_order .Add_order_container .Add_order_header {
     width: 98%;
     display: flex;
     justify-content: space-between;
 }
 
-.Add_order .Add_order_container .Add_order_header a {
+.Add_order .Add_order_container .Add_order_header a.see_all {
+    margin-top: 0;
     text-decoration: none;
 }
 
-.Add_order .Add_order_container .Add_order_header a img {
+.Add_order .Add_order_container .Add_order_header a.see_all img {
     padding-left: 5px;
     height: 10px;
 }
@@ -39,7 +62,7 @@
 .Add_order .Add_order_container form .Add_order_right_side {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
     height: 100%;
     width: 50%;
@@ -118,7 +141,7 @@
 
 .Add_order .Add_order_container form .Add_order_right_side input  {
     margin: 10px 15px 10px 0;
-    width: 35%;
+    /*width: 35%;*/
 }
 
 .Add_order .Add_order_container form .Add_order_right_side textarea {

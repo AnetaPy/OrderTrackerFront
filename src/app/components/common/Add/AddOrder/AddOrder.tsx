@@ -1,88 +1,174 @@
-import React from "react";
+import React, {SyntheticEvent, useEffect, useState} from "react";
 import './AddOrder.css';
 import {Btn} from "@/components/common/Btn/Btn";
-import {Divider} from "@/components/common/Divider/Divider";
+import {ImportExcel} from "@/components/importExcel/ImportExcel";
+import {ItemEntity} from "types";
 
 export const AddOrder = () => {
+    const [allMaterials, setAllMaterials] = useState<ItemEntity[] | null>(null);
+    const [loading, setLoading] = useState<Boolean | null>(null);
+    const [idOrder, setIdOrder] = useState<String>('');
+    const [form, setForm] = useState({
+        name: '',
+        status: '',
+        date: '',
+        singleMaterialId: '',
+        singleMaterialName: '',
+        singleMaterialAmount: '',
+        comment: '',
+    });
+
+    const saveOrder = async (e: SyntheticEvent) => {
+        e.preventDefault();
+        // Updating amount of the selected material.
+        const updateMaterial = await fetch(`http://localhost:3001/material/${form.singleMaterialId}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                amount: form.singleMaterialAmount,
+            }),
+        })
+
+        // Checking if there is enough selected material.
+        if (updateMaterial.status === 400 || updateMaterial.status === 500) {
+            const err = await updateMaterial.json();
+            alert(`${err.message}`);
+            setLoading(false);
+            return;
+        }
+
+        // Adding order.
+        const addOrder = await fetch(`http://localhost:3001/order`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(form)
+        });
+        const data = await addOrder.json();
+        setIdOrder(data.id);
+
+        // Adding relation material-order.
+        const materialRelation = {
+            order_id: data.id,
+            item_id: form.singleMaterialId,
+            amount: form.singleMaterialAmount,
+        }
+        const resRelation = await fetch(`http://localhost:3001/material/relation`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(materialRelation)
+        });
+        await resRelation.json();
+        setLoading(true);
+    }
+
+    // Finding id of selected material.
+    if (form.singleMaterialName) {
+        for (const material of allMaterials) {
+            if (material.name === form.singleMaterialName) {
+                form.singleMaterialId = material.id
+            }
+        }
+    }
+
+    // Loading all materials from database.
+    useEffect(() => {
+        (async () => {
+            const res = await fetch(`http://localhost:3001/material`);
+            const data = await res.json();
+            setAllMaterials(data);
+        })()
+    }, []);
+
+    const updateForm = (key: string, value: any) => {
+        setForm(form => ({
+            ...form,
+            [key]: value,
+        }))
+    }
+
+    // If everything is ok, return a success message.
+    if (loading) {
+        return (
+            <div className="Add_order">
+                <div className="Add_order_container">
+                    <h3>Zamówienie "{form.name}" zostało poprawnie dodane do bazy.</h3>
+                    <a href="/orders">Zobacz wszystkie zamówienia <img src="/icons/arrow_right.png" alt=""/></a>
+                    <a href="/home">Odśwież stronę główną <img src="/icons/arrow_right.png" alt=""/></a>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="Add_order">
             <div className="Add_order_container">
                 <div className="Add_order_header">
                     <h2>Dodaj nowe zamówienie</h2>
-                    <a href="/orders">zobacz wszystkie <img src="/icons/arrow_right.png" alt=""/></a>
+                    <a href="/orders" className="see_all">zobacz wszystkie <img src="/icons/arrow_right.png"
+                                                                                alt=""/></a>
                 </div>
-                <form>
+                <form onSubmit={saveOrder}>
                     <div className="Add_order_left_side">
                         <label>
                             Nazwa
                             <input
                                 type="text"
                                 name="name-order"
-                                // value={email}
-                                // onChange={(e) => setEmail(e.target.value)}
+                                value={form.name}
+                                onChange={e => updateForm('name', e.target.value)}
                                 className="Name_order"
                                 placeholder="Nazwa zamówienia"
+                                required
                             />
                         </label>
                         <label>
                             Status
-                            <select name="status-order">
-                                <option value="">Do zrobienia</option>
-                                <option value="">W trakcie</option>
-                                <option value="">Zrobione</option>
-                                <option value="">Opóźnione</option>
+                            <select
+                                name="status-order"
+                                value={form.status}
+                                onChange={e => updateForm('status', e.target.value)}>
+                                <option disabled>Wybierz</option>
+                                <option value="Do zrobienia">Do zrobienia</option>
+                                <option value="W trakcie">W trakcie</option>
+                                <option value="Zrobione">Zrobione</option>
+                                <option value="Opóźnione">Opóźnione</option>
                             </select>
                         </label>
                         <label>
                             Data
-                            <input type="date"/>
+                            <input
+                                type="date"
+                                value={form.date}
+                                onChange={e => updateForm('date', e.target.value)}
+                                required/>
                         </label>
                         <label>
                             Materiały
                             <div className="Order_add_material">
-                                <select defaultValue={"DEFAULT"} name="name-material-order">
-                                    <option value="DEFAULT" disabled>Wybierz</option>
-                                    <option value="">Frez</option>
-                                    <option value="">Płyn</option>
-                                    <option value="">Reczniki</option>
+                                <select
+                                    name="name-material-order"
+                                    value={form.singleMaterialName}
+                                    onChange={e => updateForm('singleMaterialName', e.target.value)}>
+                                    <option disabled>Wybierz</option>
+                                    {
+                                        allMaterials?.map(material => {
+                                            return <option key={material.id}
+                                                           value={material.name}>{material.name}</option>
+                                        })
+                                    }
                                 </select>
                                 <input
                                     type="number"
                                     name="amount-material-order"
-                                    // value={email}
-                                    // onChange={(e) => setEmail(e.target.value)}
-                                    className="Amount_material_order"
-                                    placeholder="0"
-                                />
-                            </div>
-                            <div className="Order_add_material">
-                                <select name="name-material-order">
-                                    <option>Wybierz</option>
-                                    <option value="">Frez</option>
-                                    <option value="">Płyn</option>
-                                    <option value="">Reczniki</option>
-                                </select>
-                                <input
-                                    type="number"
-                                    name="amount-material-order"
-                                    // value={email}
-                                    // onChange={(e) => setEmail(e.target.value)}
-                                    className="Amount_material_order"
-                                    placeholder="0"
-                                />
-                            </div>
-                            <div className="Order_add_material">
-                                <select name="name-material-order">
-                                    <option>Wybierz</option>
-                                    <option value="">Frez</option>
-                                    <option value="">Płyn</option>
-                                    <option value="">Reczniki</option>
-                                </select>
-                                <input
-                                    type="number"
-                                    name="amount-material-order"
-                                    // value={email}
-                                    // onChange={(e) => setEmail(e.target.value)}
+                                    min={0}
+                                    value={form.singleMaterialAmount}
+                                    onChange={e => updateForm('singleMaterialAmount', e.target.value)}
                                     className="Amount_material_order"
                                     placeholder="0"
                                 />
@@ -92,40 +178,20 @@ export const AddOrder = () => {
                     <div className="Add_order_right_side">
                         <label>
                             Wczytaj dane
-                            <Btn src="/images/icon-excel.png" alt="Excel icon" text="Plik .xlsx"/>
-                        </label>
-                        <Divider></Divider>
-                        <label>
-                            Wpisz dane ręcznie
-                            <br/>
-                            <input
-                                type="text"
-                                name="name-element"
-                                // value={email}
-                                // onChange={(e) => setEmail(e.target.value)}
-                                className="Name_element"
-                                placeholder="Nazwa"
-                            />
-                            <input
-                                type="number"
-                                name="amount-element"
-                                // value={email}
-                                // onChange={(e) => setEmail(e.target.value)}
-                                className="Amount_element"
-                                placeholder="0"
-                            />
+                            <ImportExcel idOrder={idOrder}/>
+                            {/*<Btn src="/images/icon-excel.png" alt="Excel icon" text="Plik .xlsx"/>*/}
                         </label>
                         <label>
                             Komentarz
                             <textarea
                                 name="comment"
                                 cols="30"
-                                rows="2"
-                                // value={email}
-                                // onChange={(e) => setEmail(e.target.value)}
+                                rows="4"
+                                value={form.comment}
+                                onChange={e => updateForm('comment', e.target.value)}
                                 className="Comment"
                                 placeholder="Twój komentarz">
-                                    </textarea>
+                            </textarea>
                         </label>
                         <Btn text="Zapisz"/>
                     </div>
