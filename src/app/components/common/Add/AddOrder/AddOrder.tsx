@@ -10,13 +10,31 @@ export const AddOrder = () => {
     const [idOrder, setIdOrder] = useState<String>('');
     const [form, setForm] = useState({
         name: '',
-        status: '',
+        status: 'Wybierz',
         date: '',
         singleMaterialId: '',
-        singleMaterialName: '',
+        singleMaterialName: 'Wybierz',
         singleMaterialAmount: '',
         comment: '',
     });
+
+    // Loading all materials from database.
+    useEffect(() => {
+        (async () => {
+            const res = await fetch(`http://localhost:3001/material`);
+            const data = await res.json();
+            setAllMaterials(data);
+        })()
+    }, []);
+
+    // Finding id of selected material.
+    if (form.singleMaterialName !== 'Wybierz') {
+        for (const material of allMaterials) {
+            if (material.name === form.singleMaterialName) {
+                form.singleMaterialId = material.id
+            }
+        }
+    }
 
     const saveOrder = async (e: SyntheticEvent) => {
         e.preventDefault();
@@ -67,23 +85,6 @@ export const AddOrder = () => {
         setLoading(true);
     }
 
-    // Finding id of selected material.
-    if (form.singleMaterialName) {
-        for (const material of allMaterials) {
-            if (material.name === form.singleMaterialName) {
-                form.singleMaterialId = material.id
-            }
-        }
-    }
-
-    // Loading all materials from database.
-    useEffect(() => {
-        (async () => {
-            const res = await fetch(`http://localhost:3001/material`);
-            const data = await res.json();
-            setAllMaterials(data);
-        })()
-    }, []);
 
     const updateForm = (key: string, value: any) => {
         setForm(form => ({
@@ -132,7 +133,8 @@ export const AddOrder = () => {
                             <select
                                 name="status-order"
                                 value={form.status}
-                                onChange={e => updateForm('status', e.target.value)}>
+                                onChange={e => updateForm('status', e.target.value)}
+                                required>
                                 <option disabled>Wybierz</option>
                                 <option value="Do zrobienia">Do zrobienia</option>
                                 <option value="W trakcie">W trakcie</option>
@@ -154,7 +156,8 @@ export const AddOrder = () => {
                                 <select
                                     name="name-material-order"
                                     value={form.singleMaterialName}
-                                    onChange={e => updateForm('singleMaterialName', e.target.value)}>
+                                    onChange={e => updateForm('singleMaterialName', e.target.value)}
+                                    required>
                                     <option disabled>Wybierz</option>
                                     {
                                         allMaterials?.map(material => {
@@ -179,7 +182,6 @@ export const AddOrder = () => {
                         <label>
                             Wczytaj dane
                             <ImportExcel idOrder={idOrder}/>
-                            {/*<Btn src="/images/icon-excel.png" alt="Excel icon" text="Plik .xlsx"/>*/}
                         </label>
                         <label>
                             Komentarz
