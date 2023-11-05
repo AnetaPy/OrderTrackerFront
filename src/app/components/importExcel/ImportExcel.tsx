@@ -53,7 +53,7 @@ export const ImportExcel = (props: Props) => {
                     },
                     body: JSON.stringify(elementRelation)
                 });
-                const dataRelation = await resRelation.json();
+                await resRelation.json();
             }
 
         })()
@@ -64,7 +64,8 @@ export const ImportExcel = (props: Props) => {
             <input
                 type="file"
                 accept=".xlsx, .xls"
-                onChange={handleFileUpload}/>
+                onChange={handleFileUpload}
+                required/>
             {rowData.length > 0 && (
                 <table>
                     <thead>
