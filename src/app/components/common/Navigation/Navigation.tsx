@@ -23,8 +23,8 @@ export const Navigation = () => {
                     <div>
                         {/*<li><Link href="/contact"><img src="/icons/contact.png" alt="Envelope image"/><p>Kontakt</p>*/}
                         {/*</Link></li>*/}
-                        <li><Link href="/log-out"><img src="/icons/log_out.png" alt="Arrow right image"/><p>Wyloguj
-                            się</p></Link></li>
+                        {/*<li><Link href="/log-out"><img src="/icons/log_out.png" alt="Arrow right image"/><p>Wyloguj*/}
+                            {/*się</p></Link></li>*/}
                     </div>
                 </ul>
             </nav>
