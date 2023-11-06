@@ -7,7 +7,7 @@ interface Props {
     text?: string;
     items: (ItemEntity)[];
     btn?: boolean;
-    onMaterialsChange?: () => void;
+    onMaterialsChange: () => void;
 }
 
 export const OrderInfoItemsUsed = (props: Props) => {
