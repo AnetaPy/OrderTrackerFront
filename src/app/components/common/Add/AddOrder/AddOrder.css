@@ -72,6 +72,10 @@
     margin-top: 0;
 }
 
+.Add_order .Add_order_container form .Add_order_right_side label:first-child {
+    height: 50%;
+}
+
 .Add_order .Add_order_container form label input,
 .Add_order .Add_order_container form label textarea,
 .Add_order .Add_order_container form label select {

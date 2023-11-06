@@ -13,6 +13,10 @@
     border-radius: var(--border_radius);
 }
 
+.Add_material .Add_material_container h3{
+    font-size: 23px;
+}
+
 .Add_material .Add_material_container h2 {
     margin-top: 10px;
 }

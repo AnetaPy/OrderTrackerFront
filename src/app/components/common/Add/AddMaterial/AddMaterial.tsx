@@ -5,7 +5,7 @@ import {Spinner} from "@/components/common/Spinner/Spinner";
 import Link from "next/link";
 
 interface Props {
-    onMaterialsChange: () => void;
+    onMaterialsChange?: () => void;
 }
 
 export const AddMaterial = (props: Props) => {
@@ -32,7 +32,7 @@ export const AddMaterial = (props: Props) => {
         } finally {
             setLoading(false);
         }
-        props.onMaterialsChange();
+        props.onMaterialsChange ? props.onMaterialsChange() : null;
     }
 
     if (loading) {
@@ -43,7 +43,7 @@ export const AddMaterial = (props: Props) => {
         return <div className="Add_material">
             <div className="Add_material_container">
                 <h2>Materiał "{form.name}" został poprawnie dodany do bazy</h2>
-                <Link href="/materials">Zobacz stan mazynowy <img src="/icons/arrow_right.png" alt="arrow"/></Link>
+                {props.onMaterialsChange ? null : <Link href="/materials">Zobacz stan mazynowy <img src="/icons/arrow_right.png" alt="arrow"/></Link>}
             </div>
         </div>
     }
@@ -69,6 +69,7 @@ export const AddMaterial = (props: Props) => {
                             onChange={e => updateForm('name', e.target.value)}
                             className="Name_material"
                             placeholder="Nazwa materiału"
+                            autoComplete="off"
                             required
                         />
                     </label>

@@ -9,6 +9,7 @@
     border-radius: var(--border_radius);
     height: 18vh;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .Order_info_items_container::-webkit-scrollbar{
