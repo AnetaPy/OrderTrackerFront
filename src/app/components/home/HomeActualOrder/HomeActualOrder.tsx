@@ -6,14 +6,33 @@ import {OrderEntity} from "types";
 
 export const HomeActualOrder = () => {
     const [order, setOrder] = useState<OrderEntity | null>(null);
+    const [error, setError] = useState<string>(null);
     let difference;
+    const {name, elements, date, materials, status} = order;
+
     useEffect(() => {
         (async () => {
             const res = await fetch(`http://localhost:3001/home`);
             const data = await res.json();
+            if (res.status === 400 || res.status === 500) {
+                setError(data.message)
+                return;
+            }
             setOrder(data);
         })()
     }, []);
+
+    // Show information if you do not have an order with the status "in progress".
+    if (error) {
+        return (
+            <div className="Home_actual_order">
+                <div className="Home_actual_order_container">
+                    <h2>{error}</h2>
+                </div>
+            </div>)
+    }
+
+    // Show Spinner while loading data.
     if (order === null) {
         return (
             <div className="Home_actual_order">
@@ -23,7 +42,7 @@ export const HomeActualOrder = () => {
             </div>)
     }
 
-    const {name, elements, date, materials, status} = order;
+    // Change the date format.
     if (date) {
         const currentDate = new Date().getTime();
         const deadlineDate = new Date(date).getTime();
