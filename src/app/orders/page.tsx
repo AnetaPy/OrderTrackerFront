@@ -11,12 +11,16 @@ import {OrderEntity} from "types";
 
 const Orders = () => {
     const [allOrders, setAllOrders] = useState<OrderEntity[] | null>(null);
+
+    const refreshOrders = async () => {
+        setAllOrders(null);
+        const res = await fetch(`http://localhost:3001/order`);
+        const data = await res.json();
+        setAllOrders(data);
+    }
+
     useEffect(() => {
-        (async () => {
-            const res = await fetch(`http://localhost:3001/order`);
-            const data = await res.json();
-            setAllOrders(data);
-        })()
+        refreshOrders();
     }, []);
 
     return (
@@ -37,7 +41,7 @@ const Orders = () => {
                         {allOrders === null
                             ? <Spinner/>
                             : allOrders.map(order => (
-                                <SingleOrder key={order.id} order={order}/>
+                                <SingleOrder key={order.id} order={order} onOrdersChange={refreshOrders}/>
                             ))
                           }
                     </div>
