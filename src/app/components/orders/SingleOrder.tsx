@@ -4,6 +4,7 @@ import Link from "next/link";
 import Popup from "reactjs-popup";
 import {OrderEntity} from "types";
 import {OrderInfoItemsUsed} from "@/components/common/OrderInfo/OrderInfoItemsUsed";
+import {EditOrder} from "@/components/common/Edit/EditOrder/EditOrder";
 
 interface Props {
     order: OrderEntity;
@@ -30,7 +31,6 @@ export const SingleOrder = (props: Props) => {
         }
         props.onOrdersChange();
     }
-
     return (
         <div className="Orders_single_order">
             <h2>{name}</h2>
@@ -40,11 +40,11 @@ export const SingleOrder = (props: Props) => {
                 <OrderInfoItemsUsed text="Elementy" items={elements}/>
                 <OrderInfoItemsUsed text="Materiały" items={materials}/>
             </div>
-            <p>{comment}</p>
+            {comment ? <p>{comment}</p> : null}
             <div className="Orders_single_order_buttons">
                 <Popup closeOnDocumentClick trigger={<Link href="#">🖊️ Edytuj</Link>}
-                       position="right center">
-                    <p>ok</p>
+                       position="center center">
+                    <EditOrder id={id} name={name} status={status} date={date} elements={elements} materials={materials} comment={comment} onOrdersChange={props.onOrdersChange}/>
                 </Popup>
                 <Link href="#" onClick={deleteOrder}>🗑️ Usuń</Link>
             </div>
