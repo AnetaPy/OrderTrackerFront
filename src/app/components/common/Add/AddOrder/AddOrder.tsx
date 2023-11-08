@@ -180,7 +180,7 @@ export const AddOrder = () => {
                     </div>
                     <div className="Add_order_right_side">
                         <label>
-                            Wczytaj dane
+                            Wczytaj elementy
                             <ImportExcel idOrder={idOrder}/>
                         </label>
                         <label>

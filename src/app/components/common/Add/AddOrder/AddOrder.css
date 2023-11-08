@@ -10,28 +10,6 @@
     border-radius: var(--border_radius);
 }
 
-.Add_order .Add_order_container h3{
-    margin: 20px 0;
-}
-
-.Add_order .Add_order_container a{
-    display: block;
-    margin-top: 35px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #C7C7C7FF;
-}
-
-.Add_order .Add_order_container a:nth-child(3) {
-    margin-top: 15px;
-
-}
-
-.Add_order .Add_order_container a img {
-    padding-left: 3px;
-    height: 11px;
-}
-
 .Add_order .Add_order_container .Add_order_header {
     width: 98%;
     display: flex;
@@ -39,8 +17,11 @@
 }
 
 .Add_order .Add_order_container .Add_order_header a.see_all {
+    display: block;
     margin-top: 0;
+    font-size: 1.2rem;
     text-decoration: none;
+    color: #C7C7C7FF;
 }
 
 .Add_order .Add_order_container .Add_order_header a.see_all img {
@@ -49,11 +30,8 @@
 }
 
 .Add_order .Add_order_container form {
-    padding: 15px 0;
     display: flex;
-}
-
-.Add_order .Add_order_container form {
+    padding: 15px 0;
     width: 100%;
     height: 90%;
 }

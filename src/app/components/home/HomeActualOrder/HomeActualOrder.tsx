@@ -8,7 +8,6 @@ export const HomeActualOrder = () => {
     const [order, setOrder] = useState<OrderEntity | null>(null);
     const [error, setError] = useState<string>(null);
     let difference;
-    const {name, elements, date, materials, status} = order;
 
     useEffect(() => {
         (async () => {
@@ -43,17 +42,17 @@ export const HomeActualOrder = () => {
     }
 
     // Change the date format.
-    if (date) {
+    if (order.date) {
         const currentDate = new Date().getTime();
-        const deadlineDate = new Date(date).getTime();
+        const deadlineDate = new Date(order.date).getTime();
         difference = Math.ceil((deadlineDate - currentDate) / (1000 * 3600 * 24));
     }
 
     return (
         <div className="Home_actual_order">
             <div className="Home_actual_order_container">
-                <h2>{name}</h2>
-                <p>{status}</p>
+                <h2>{order.name}</h2>
+                <p>{order.status}</p>
                 {difference > 0
                     ? <p className={difference > 7 ? "Home_notification_green" : "Home_notification_orange"}>Pozostało
                         Ci {difference} dni do końca terminu</p>
@@ -62,14 +61,14 @@ export const HomeActualOrder = () => {
                     <div className="Home_deadline">
                         <h3>Termin</h3>
                         <div className="Home_deadline_container">
-                            <h4>{date ? new Date(date).toLocaleDateString() : null}</h4>
+                            <h4>{order.date ? new Date(order.date).toLocaleDateString() : null}</h4>
                             {difference > 0
                                 ? <p>Pozostało Ci {difference} dni do końca terminu</p>
                                 : <p>Jesteś {-difference} dni po terminie</p>}
                         </div>
                     </div>
-                    <OrderInfoItemsUsed items={elements} text="Elementy"/>
-                    <OrderInfoItemsUsed items={materials} text="Wykorzystane materiały"/>
+                    <OrderInfoItemsUsed items={order.elements} text="Elementy"/>
+                    <OrderInfoItemsUsed items={order.materials} text="Wykorzystane materiały"/>
                 </div>
             </div>
         </div>
