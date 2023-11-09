@@ -45,11 +45,13 @@
     background-color: var(--first_color);
 }
 
-.Orders_container .Orders_wrapper .Orders_top_bar button:last-child {
+.Orders_container .Orders_wrapper .Orders_top_bar a {
     margin-left: 20%;
     padding: 10px 50px;
     background-color: var(--navy_color);
     font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 20px;
 }
 
 .Orders_container .Orders_wrapper .Orders_content{
@@ -57,4 +59,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
+}
+
+.popup-content .Add_order .Add_order_container {
+    border: 2px solid #fff;
 }

@@ -8,6 +8,9 @@ import {Btn} from "@/components/common/Btn/Btn";
 import {SingleOrder} from "@/components/orders/SingleOrder";
 import {Spinner} from "@/components/common/Spinner/Spinner";
 import {OrderEntity} from "types";
+import Link from "next/link";
+import Popup from "reactjs-popup";
+import {AddOrder} from "@/components/common/Add/AddOrder/AddOrder";
 
 const Orders = () => {
     const [allOrders, setAllOrders] = useState<OrderEntity[] | null>(null);
@@ -35,7 +38,10 @@ const Orders = () => {
                         <Btn nameOfClass="in_progress" text="W trakcie"/>
                         <Btn nameOfClass="done" text="Zrobione"/>
                         <Btn nameOfClass="delayed" text="Opóźnione"/>
-                        <Btn text="Dodaj nowe zamówienie"/>
+                        <Popup closeOnDocumentClick trigger={<Link href="#">Dodaj nowe zamówienie</Link>}
+                               position="bottom right">
+                            <AddOrder onOrdersChange={refreshOrders}/>
+                        </Popup>
                     </div>
                     <div className="Orders_content">
                         {allOrders === null

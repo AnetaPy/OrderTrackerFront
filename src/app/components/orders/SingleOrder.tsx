@@ -40,7 +40,8 @@ export const SingleOrder = (props: Props) => {
                 <OrderInfoItemsUsed text="Elementy" items={elements}/>
                 <OrderInfoItemsUsed text="Materiały" items={materials}/>
             </div>
-            {comment ? <p>{comment}</p> : null}
+            {comment
+                ? <div className="comment"><h3>Komentarz</h3><p>{comment}</p></div> : null}
             <div className="Orders_single_order_buttons">
                 <Popup closeOnDocumentClick trigger={<Link href="#">🖊️ Edytuj</Link>}
                        position="center center">

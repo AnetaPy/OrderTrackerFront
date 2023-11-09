@@ -5,7 +5,11 @@ import {ImportExcel} from "@/components/importExcel/ImportExcel";
 import {ItemEntity} from "types";
 import Link from "next/link";
 
-export const AddOrder = () => {
+interface Props {
+    onOrdersChange?: () => void;
+}
+
+export const AddOrder = (props: Props) => {
     const [allMaterials, setAllMaterials] = useState<ItemEntity[] | null>(null);
     const [loading, setLoading] = useState<Boolean | null>(null);
     const [idOrder, setIdOrder] = useState<String>('');
@@ -83,9 +87,9 @@ export const AddOrder = () => {
             body: JSON.stringify(materialRelation)
         });
         await resRelation.json();
-        setLoading(true);
+        setLoading(true)
+        props.onOrdersChange ? props.onOrdersChange() : null;
     }
-
 
     const updateForm = (key: string, value: any) => {
         setForm(form => ({
@@ -99,9 +103,15 @@ export const AddOrder = () => {
         return (
             <div className="Add_order">
                 <div className="Add_order_container">
-                    <h3>Zamówienie "{form.name}" zostało poprawnie dodane do bazy.</h3>
-                    <Link href="/orders">Zobacz wszystkie zamówienia <img src="/icons/arrow_right.png" alt="arrow"/></Link>
-                    <Link href="/home">Odśwież stronę główną <img src="/icons/arrow_right.png" alt="arrow"/></Link>
+                    <h2>Zamówienie "{form.name}" zostało poprawnie dodane do bazy.</h2>
+                    {props.onOrdersChange
+                        ? null
+                        : <div className="Add_order_link">
+                            <Link href="/orders">Zobacz wszystkie zamówienia <img src="/icons/arrow_right.png"
+                                                                                  alt="arrow"/></Link>
+                            <Link href="/home">Odśwież stronę główną <img src="/icons/arrow_right.png"
+                                                                          alt="arrow"/></Link>
+                        </div>}
                 </div>
             </div>
         )
@@ -112,7 +122,9 @@ export const AddOrder = () => {
             <div className="Add_order_container">
                 <div className="Add_order_header">
                     <h2>Dodaj nowe zamówienie</h2>
-                    <Link href="/orders" className="see_all">zobacz wszystkie <img src="/icons/arrow_right.png" alt="arrow"/></Link>
+                    {props.onOrdersChange ? null :
+                        <Link href="/orders" className="see_all">zobacz wszystkie <img src="/icons/arrow_right.png"
+                                                                                       alt="arrow"/></Link>}
                 </div>
                 <form onSubmit={saveOrder}>
                     <div className="Add_order_left_side">
