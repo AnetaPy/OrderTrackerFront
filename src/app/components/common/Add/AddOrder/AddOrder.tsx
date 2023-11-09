@@ -16,7 +16,7 @@ export const AddOrder = (props: Props) => {
     const [form, setForm] = useState({
         name: '',
         status: 'Wybierz',
-        date: '',
+        date: new Date().toISOString().split('T')[0],
         singleMaterialId: '',
         singleMaterialName: 'Wybierz',
         singleMaterialAmount: '',

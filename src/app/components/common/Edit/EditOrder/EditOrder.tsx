@@ -16,8 +16,8 @@ export const EditOrder = (props: Props) => {
     const [form, setForm] = useState({
         name: name,
         status: status,
-        date: date,
-        comment: comment
+        date: new Date(date).toISOString().split('T')[0],
+        comment: comment,
     });
 
     const saveOrder = async (e: SyntheticEvent) => {
@@ -79,7 +79,7 @@ export const EditOrder = (props: Props) => {
                         Data
                         <input
                             type="date"
-                            value={new Date(form.date).toLocaleDateString()}
+                            value={form.date}
                             onChange={e => updateForm('date', e.target.value)}
                             required/>
                     </label>
