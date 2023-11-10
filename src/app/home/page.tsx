@@ -13,16 +13,16 @@ import {Header} from "@/components/common/Header/Header";
 const Home = () => {
     return (
         <div className="Home">
-            <Navigation/>
-            <div className="Home_container">
-                <Header text="Witaj Aneta!"/>
-                <div className="Home_wrapper">
-                    <HomeCalendar/>
-                    <HomeActualOrder/>
-                    <AddMaterial/>
-                    <AddOrder/>
-                </div>
-            </div>
+                    <Navigation/>
+                    <div className="Home_container">
+                        <Header text={"Witaj!"}/>
+                        <div className="Home_wrapper">
+                            <HomeCalendar/>
+                            <HomeActualOrder/>
+                            <AddMaterial/>
+                            <AddOrder/>
+                        </div>
+                    </div>
         </div>
     )
 }
