@@ -1,0 +1,17 @@
+.Divider {
+    display: flex;
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.Divider .Divider_line {
+    margin: 0 30px;
+    height: 2px;
+    width: 25%;
+    background-color: var(--line_color);
+}
+
+.Divider p {
+    font-size: 1.2rem;
+}

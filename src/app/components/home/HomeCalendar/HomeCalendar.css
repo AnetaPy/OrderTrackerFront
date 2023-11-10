@@ -1,0 +1,56 @@
+.Home_calendar {
+    padding: 20px 10px 20px 50px;
+    width: 24vw;
+}
+
+.Home_calendar .react-calendar {
+    background-color: var(--first_color);
+    min-height: 32vh;
+    width: 100%;
+}
+
+.Home_calendar .react-calendar {
+    padding: 10px 12px 0;
+    height: 100%;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: var(--first_color);
+}
+
+.Home_calendar .react-calendar .react-calendar__tile {
+    font-size: 1rem;
+}
+
+.Home_calendar .react-calendar .react-calendar__month-view__weekdays {
+    font-size: 0.9rem;
+}
+
+.Home_calendar .react-calendar .react-calendar__tile--now {
+    background: var(--background_color);
+    border-radius: 10px;
+}
+
+.Home_calendar .react-calendar .react-calendar__navigation button{
+    font-size: 1.1rem;
+}
+
+.Home_calendar .react-calendar .react-calendar__tile--active:enabled:hover,
+.Home_calendar .react-calendar .react-calendar__tile--active:enabled:focus,
+.Home_calendar .react-calendar .react-calendar__tile:enabled:hover,
+.Home_calendar .react-calendar .react-calendar__tile:enabled:focus,
+.Home_calendar .react-calendar .react-calendar__navigation button:enabled:hover,
+.Home_calendar .react-calendar .react-calendar__navigation button:enabled:focus,
+.Home_calendar .react-calendar .react-calendar__tile--hasActive,
+.Home_calendar .react-calendar .react-calendar__tile:disabled,
+.Home_calendar .react-calendar .react-calendar__navigation button:disabled{
+    background: var(--navy_color);
+    border-radius: 10px;
+}
+
+.Home_calendar .react-calendar .react-calendar__tile {
+    padding: 8px 5px;
+}
+
+.Home_calendar .react-calendar .react-calendar__navigation {
+    margin-bottom: 0.4rem;
+}

@@ -1,0 +1,73 @@
+.Home_actual_order {
+    padding: 20px 40px 20px 10px;
+    width: 63vw;
+}
+
+.Home_actual_order .Home_actual_order_container {
+    padding: 20px 40px;
+    background-color: var(--first_color);
+    height: 32vh;
+    border-radius: var(--border_radius);
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+}
+
+.Home_actual_order .Home_actual_order_container h2 {
+    padding-right: 20px;
+    display: inline;
+}
+
+.Home_actual_order .Home_actual_order_container p {
+    padding-right: 40px;
+    display: inline;
+    font-size: 1.1rem;
+}
+
+.Home_actual_order .Home_actual_order_container p:nth-child(3) {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Home_actual_order .Home_actual_order_container p.Home_notification_green {
+    color: green;
+}
+
+.Home_actual_order .Home_actual_order_container p.Home_notification_red {
+    color: red;
+}
+
+.Home_actual_order .Home_actual_order_container p.Home_notification_orange {
+    color: orange;
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items {
+    height: 100%;
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline{
+    width: 30%;
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container{
+    margin-top: 10px;
+    padding: 20px 25px;
+    background-color: var(--background_color);
+    border-radius: var(--border_radius);
+    height: 18vh;
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.Home_actual_order .Home_actual_order_container .Home_actual_order_container_items .Home_deadline_container p {
+    font-size: 1.1rem;
+}
+
+
+

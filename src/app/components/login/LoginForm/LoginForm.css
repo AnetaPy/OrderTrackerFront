@@ -1,0 +1,55 @@
+.Login_container .Login_form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login_container .Login_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58%;
+}
+
+.Login_container .Login_form form label {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.Login_container .Login_form form label input {
+    display: block;
+    margin: 10px 0 15px -10px;
+    padding: 12px 12px 12px 30px;
+    width: 103%;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: var(--second_color);
+    color: var(--input_font_color);
+}
+
+.Login_container .Login_form form button {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    background-color: var(--first_color);
+    border: none;
+    border-radius: var(--border_radius);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.Login_container .Login_form a {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.Login_container .Login_form p {
+    cursor: pointer;
+}
+
+.Login_container .Login_form p span {
+    font-weight: bold;
+}

@@ -1,11 +1,13 @@
-import './page.css';
-const Home = () => {
+import './page.css'
+import Signin from "@/signin/page";
+
+
+const Login = () => {
     return (
-        <div className="main">
-            <h1>Hi</h1>
-            <h2>User</h2>
-        </div>
+            <div className="Login">
+                <Signin/>
+            </div>
     )
 }
 
-export default Home;
+export default Login;

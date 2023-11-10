@@ -1,0 +1,38 @@
+.Order_info_items {
+    width: 30%;
+}
+
+.Order_info_items_container{
+    margin-top: 10px;
+    padding: 15px 25px;
+    background-color: var(--background_color);
+    border-radius: var(--border_radius);
+    height: 18vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.Order_info_items_container::-webkit-scrollbar{
+    width: 10px;
+    background: #b7b7b7;
+    border-radius: 10px;
+}
+
+.Order_info_items_container::-webkit-scrollbar-thumb {
+    background: #6b6b6b;
+    border-radius: 10px;
+}
+
+.Order_info_items_container table {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.Order_info_items_container table thead tr th {
+    text-align: left;
+}
+
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(3),
+.Materials_container .Materials_wrapper .Order_info_items .Order_info_items_container table thead tr th:nth-child(4) {
+    width: 20%;
+}

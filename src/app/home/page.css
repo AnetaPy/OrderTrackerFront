@@ -1,0 +1,20 @@
+.Home {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Home_container {
+    display: flex;
+    flex-direction: column;
+    width: 89vw;
+}
+
+.Home_container .Home_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+

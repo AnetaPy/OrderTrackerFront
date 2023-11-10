@@ -25,7 +25,8 @@
     "paths": {
       "types": [
         "../order-tracker-back/types"
-      ]
+      ],
+      "@/*": ["./src/app/*"]
     },
     "forceConsistentCasingInFileNames": true
   },

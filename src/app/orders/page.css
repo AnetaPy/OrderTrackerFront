@@ -1,0 +1,66 @@
+.Orders {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Orders_container {
+    display: flex;
+    flex-direction: column;
+    width: 89vw;
+}
+
+.Orders_container .Orders_wrapper {
+ padding: 15px 40px 0;
+}
+
+/*Buttons*/
+.Orders_container .Orders_wrapper button {
+    margin: 0 10px;
+    padding: 8px 25px;
+    background-color: #000;
+}
+
+.Orders_container .Orders_wrapper button.to_do {
+    color: yellow;
+}
+
+.Orders_container .Orders_wrapper button.in_progress {
+    color: orange;
+}
+
+.Orders_container .Orders_wrapper button.done {
+    color: green;
+}
+
+.Orders_container .Orders_wrapper button.delayed {
+    color: red;
+}
+
+.Orders_container .Orders_wrapper button.active {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--first_color);
+}
+
+.Orders_container .Orders_wrapper .Orders_top_bar a {
+    margin-left: 20%;
+    padding: 10px 50px;
+    background-color: var(--navy_color);
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.Orders_container .Orders_wrapper .Orders_content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.popup-content .Add_order .Add_order_container {
+    border: 2px solid #fff;
+}

@@ -1,0 +1,52 @@
+.Navigation {
+    padding: 30px 23px;
+    width: 11vw;
+    background-color: var(--navy_color);
+}
+
+.Navigation .Navigation_user_details {
+    padding-right: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Navigation .Navigation_user_details img {
+    height: 42px;
+}
+
+.Navigation .Navigation_user_details h3 {
+    padding-bottom: 3px;
+    font-size: 1.3rem;
+}
+
+.Navigation nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+    list-style: none;
+}
+
+.Navigation nav ul .Navigation_line {
+    margin-bottom: 15px;
+    height: 1px;
+    background-color: var(--line_color);
+}
+
+.Navigation nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.Navigation nav ul li a img {
+    padding-right: 20px;
+    height: 28px;
+}
+
+.Navigation nav ul li a p {
+    font-size: 1.1rem;
+}

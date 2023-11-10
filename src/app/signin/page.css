@@ -1,0 +1,21 @@
+.Login {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--background_color);
+}
+
+.Login_container {
+    width: 55%;
+}
+
+.Login_container img {
+    margin: 40px 10px 0 85%;
+    width: 10%;
+}
+
+.Login_container h2 {
+    margin-top: 30px;
+    margin-left: 20%;
+    font-size: 2.4rem;
+}

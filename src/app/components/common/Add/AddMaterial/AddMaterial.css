@@ -1,0 +1,65 @@
+.Add_material {
+    padding: 20px 10px 20px 50px;
+    width: 24vw;
+}
+
+.Add_material .Add_material_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px 30px;
+    background-color: var(--first_color);
+    height: 47vh;
+    border-radius: var(--border_radius);
+}
+
+.Add_material .Add_material_container h3{
+    font-size: 23px;
+}
+
+.Add_material .Add_material_container h2 {
+    margin-top: 10px;
+}
+
+.Add_material .Add_material_container a {
+    margin-top: 35px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C7C7C7FF;
+}
+
+.Add_material .Add_material_container a img {
+    padding-left: 3px;
+    height: 11px;
+
+}
+
+.Add_material .Add_material_container form {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Add_material .Add_material_container form input {
+    margin: 10px 0 20px;
+    display: block;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: var(--second_color);
+    color: var(--input_font_color);
+}
+
+.Add_material .Add_material_container form input::placeholder {
+    color: var(--input_font_color);
+}
+
+.Add_material .Add_material_container form label:nth-child(2) input {
+    width: 40%;
+}
+
+.Add_material .Add_material_container form button {
+    margin-top: 35%;
+    padding: 8px 20px;
+}

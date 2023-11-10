@@ -1,0 +1,80 @@
+.Orders_single_order {
+    margin: 35px 20px 20px;
+    padding: 20px;
+    width: 26%;
+    border-radius: var(--border_radius);
+    background-color: var(--first_color);
+}
+
+.Orders_single_order h2,
+.Orders_single_order p {
+    display: block;
+    margin: 6px auto;
+    height: 35px;
+    background-color: black;
+    text-align: center;
+    border-radius: var(--border_radius);
+    line-height: 35px;
+}
+
+.Orders_single_order h2 {
+    width: 60%;
+    font-size: 1.3rem;
+}
+
+.Orders_single_order p {
+    width: 40%;
+    color: var(--input_font_color);
+}
+.Orders_single_order .comment p {
+    width: 90%;
+}
+
+.Orders_single_order .Orders_single_order_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Orders_single_order .Order_info_items {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.Orders_single_order .Order_info_items h3,
+.Orders_single_order .comment h3 {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.Orders_single_order .Order_info_items .Order_info_items_container {
+    margin: 7px;
+    height: 13vh;
+}
+
+.Orders_single_order .Order_info_items .Order_info_items_container table thead tr th,
+.Orders_single_order .Order_info_items .Order_info_items_container table tbody tr td {
+    color: var(--input_font_color);
+
+}
+
+.Orders_single_order .Orders_single_order_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Orders_single_order .Orders_single_order_buttons a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 30px;
+    background-color: var(--background_color);
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #C7C7C7FF;
+}
+
+.Orders_single_order .Orders_single_order_buttons a img {
+    padding-left: 3px;
+    height: 11px;
+}

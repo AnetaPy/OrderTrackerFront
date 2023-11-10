@@ -1,0 +1,60 @@
+.Edit_order {
+    padding: 20px 40px 20px 10px;
+    /*width: 63vw;*/
+}
+
+.Edit_order_container {
+    padding: 20px 30px;
+    background-color: var(--first_color);
+    height: 47vh;
+    border-radius: var(--border_radius);
+    border: 2px solid #fff;
+}
+
+.Edit_order .Edit_order_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 80%;
+}
+
+.Edit_order .Edit_order_container form label input,
+.Edit_order .Edit_order_container form label textarea,
+.Edit_order .Edit_order_container form label select {
+    margin-left: 15px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: var(--second_color);
+    color: var(--input_font_color);
+    color-scheme: dark;
+}
+
+.Edit_order .Edit_order_container form label input::placeholder,
+.Edit_order .Edit_order_container form label textarea::placeholder {
+    color: var(--input_font_color);
+}
+
+.Edit_order .Edit_order_container form label input[type=date] {
+    margin-left: 25px;
+    width: 50%;
+}
+
+.Edit_order .Edit_order_container form label select {
+    border-right: 10px solid transparent;
+    width: 45%;
+}
+
+.Edit_order .Edit_order_container form label textarea {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.Edit_order .Edit_order_container form button {
+    margin: 5px auto 0;
+    padding: 8px 20px;
+    width: 90%;
+}

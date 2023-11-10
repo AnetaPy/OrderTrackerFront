@@ -1,0 +1,35 @@
+.Login_container .Login_portals {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login_container .Login_portals button {
+    display: block;
+    margin: 6px 0;
+    padding: 10px 30px;
+    width: 60%;
+    background-color: var(--second_color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.Login_container .Login_portals button .Login_button {
+    display: flex;
+    justify-content: center;
+}
+
+.Login_container .Login_portals button .Login_button img {
+    margin: 0;
+    padding-right: 20px;
+    height: 30px;
+    width: 50px;
+}
+
+.Login_container .Login_portals button .Login_button p {
+    line-height: 25px;
+    font-size: 1.2rem;
+}
