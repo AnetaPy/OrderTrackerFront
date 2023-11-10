@@ -16,8 +16,8 @@ To run this project:
 
 1. Clone this repository.
 ```
-$ git clone https://github.com/AnetaPy/notebook
-$ git cd notebook
+$ git clone https://github.com/AnetaPy/OrderTrackerFront
+$ git cd OrderTrackerFront
 ```
 
 2. Install dependencies.
