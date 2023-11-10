@@ -3,7 +3,7 @@
 OrderTracker App allows you to supervise all orders, materials used to complete them and the progress of each order.
 
 Home page OrderTracker
-(toReadMe/OrderTRacker_pic.png)
+![homePage](https://github.com/AnetaPy/OrderTrackerFront/blob/main/toReadMe/OrderTRacker_pic.png?raw=true)
 
 ## Preview
 
