@@ -1,8 +1,7 @@
 # OrderTrcaker - Frontend
 
 OrderTracker App allows you to supervise all orders, materials used to complete them and the progress of each order.
-![Uploading OrderTRacker_pic.png…]()
-
+![tekst alternatywny](toReadMe/OrderTRacker_pic.png)
 ## Technologies
 
 Project is created with:
