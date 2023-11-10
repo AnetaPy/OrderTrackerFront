@@ -1,3 +1,7 @@
+.Signup_container h2{
+    text-align: center;
+}
+
 .Signup_container .Signup_form {
     display: flex;
     flex-direction: column;
@@ -7,9 +11,8 @@
 .Signup_container .Signup_form form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 40px;
-    width: 58%;
+    width: 40%;
 }
 
 .Signup_container .Signup_form form label {
@@ -21,7 +24,7 @@
     display: block;
     margin: 10px 0 15px -10px;
     padding: 12px 12px 12px 30px;
-    width: 95%;
+    width: 100%;
     font-size: 1.3rem;
     border: none;
     border-radius: 20px;
@@ -30,9 +33,9 @@
 }
 
 .Signup_container .Signup_form form button {
-    margin-top: 10px;
+    margin: 10px 0 0 -10px;
     padding: 12px;
-    width: 103%;
+    width: 100%;
     background-color: var(--first_color);
     border: none;
     border-radius: 20px;
