@@ -8,9 +8,7 @@ Home page OrderTracker
 
 ## Preview
 
-
-
-![Preview](https://github.com/AnetaPy/OrderTrackerFront/blob/main/toReadMe/OrderTracker.mp4?raw=true)
+https://github.com/AnetaPy/OrderTrackerFront/assets/91451163/19c6be21-5225-4272-8e09-92143eeadbc2
 
 ## Technologies
 
