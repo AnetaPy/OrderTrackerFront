@@ -16,7 +16,8 @@
     justify-content: space-between;
 }
 
-.Add_order .Add_order_container .Add_order_header a.see_all {
+.Add_order .Add_order_container .Add_order_header a,
+.Add_order .Add_order_container .Add_order_link a{
     display: block;
     margin-top: 0;
     font-size: 1.2rem;
@@ -24,7 +25,8 @@
     color: #C7C7C7FF;
 }
 
-.Add_order .Add_order_container .Add_order_header a.see_all img {
+.Add_order .Add_order_container .Add_order_header a img,
+.Add_order .Add_order_container .Add_order_link a img{
     padding-left: 5px;
     height: 10px;
 }

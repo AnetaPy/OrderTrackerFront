@@ -79,6 +79,7 @@ export const SignupForm = () => {
                             onChange={e => updateForm('email', e.target.value)}
                             className="Login_email"
                             placeholder="E-mail"
+                            autoComplete="off"
                         />
                     </label>
                     <label>

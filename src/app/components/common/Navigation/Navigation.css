@@ -38,7 +38,7 @@
 .Navigation nav ul li a {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -48,5 +48,5 @@
 }
 
 .Navigation nav ul li a p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
