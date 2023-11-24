@@ -3,9 +3,7 @@
 OrderTracker App allows you to supervise all orders, materials used to complete them and the progress of each order.
 I am still working on logging in and registering users with full security and filtering orders on the order page.
 
-An empty database is available in the file order_tracker.sql
-
-File to 
+An empty database is available in the file order_tracker.sql.
 
 Home page OrderTracker
 
